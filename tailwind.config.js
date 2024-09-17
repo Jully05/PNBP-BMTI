@@ -11,6 +11,7 @@ export default {
       fontFamily: {
         sans: ['Inter var', ...defaultTheme.fontFamily.sans],
       },
+      
     },
   },
   plugins: [],
