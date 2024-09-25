@@ -7,3 +7,13 @@
     -ms-overflow-style: none;  /* Internet Explorer and Edge */
     scrollbar-width: none;  /* Firefox */
 }
+
+/* Menyembunyikan ikon WhatsApp secara default */
+.whatsapp-btn {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.whatsapp-btn.show {
+    opacity: 1;
+}
