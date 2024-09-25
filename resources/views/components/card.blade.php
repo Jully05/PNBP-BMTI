@@ -1,5 +1,4 @@
-<div class="py-4 px-10 mt-[150px]">
-    <div class="max-w-sm md:max-w-6xl flex overflow-x-auto hide-scrollbar">
+    <div class="mt-[50px] max-w-sm md:max-w-6xl flex overflow-x-auto hide-scrollbar">
         <div class="flex gap-7 min-w-max">
             <!-- Card 1 -->
             <div class="max-w-xs md:max-w-xs rounded shadow-2xl bg-white flex-shrink-0">
@@ -92,4 +91,3 @@
             </div>
         </div>
     </div>
-</div>
