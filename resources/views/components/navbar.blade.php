@@ -26,7 +26,7 @@
                             </x-nav-link>
                             <x-nav-link href="/fasilitas" :active="request()->is('fasilitas')">Fasilitas Lembaga</x-nav-link>
                             <x-nav-link href="/register" :active="request()->is('register')">Magang</x-nav-link>
-                            <x-nav-link href="#" :active="request()->is('#')">Kunj-In</x-nav-link>
+                            <x-nav-link href="/kunjin" :active="request()->is('kunjin')">Kunj-In</x-nav-link>
                         </div>
                     </div>
                 </div>
