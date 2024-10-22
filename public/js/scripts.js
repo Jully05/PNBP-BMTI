@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // Bagian Kalender (FullCalendar)
+    // Bagian Kalender (FullCalendar )
     var calendarEl = document.getElementById('calendar');
 
     var calendar = new FullCalendar.Calendar(calendarEl, {

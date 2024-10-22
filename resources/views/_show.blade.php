@@ -61,7 +61,7 @@
         <main>
             <!-- Bagian Gambar dan Deskripsi -->
             <div class="max-w-screen-lg flex flex-col md:flex-row justify-between mt-4 mb-6 mx-auto gap-6 mx-10 ">
-                <!-- Bagian Gambar -->
+                <!--Bagian Gambar-->
                 <div class="w-full md:w-1/2 bg-gradient-to-r from-white-500 to-indigo-500 p-6 rounded-lg shadow-xl">
                     <p class="text-xl font-extrabold mb-10 ">Galeri </p>
                     <div class="w-2xl ">
