@@ -1,4 +1,4 @@
-<footer class="bg-white h-[250px] md:h-[180px] ">
+<footer class="bg-white md:mt-20 h-[250px] md:h-[180px] ">
     <div class="flex flex-col md:flex-row text-center justify-center md:gap-12 gap-1 w-300px">
         <a href="" class="hover:text-blue-500 md:text-sm text-xs font-semibold leading-6 text-gray-500">Privacy</a>
         <a href="" class="hover:text-blue-500 md:text-sm text-xs font-semibold leading-6 text-gray-500">Blog</a>
