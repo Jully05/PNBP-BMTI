@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     // Bagian Kalender (FullCalendar)
     var calendarEl = document.getElementById('calendar');
-
     var calendar = new FullCalendar.Calendar(calendarEl, {
         initialView: 'dayGridMonth',
         headerToolbar: {
@@ -67,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const photoGallery = document.getElementById('smallImages');
     const scrollLeftBtn = document.querySelector('.scroll-left');
     const scrollRightBtn = document.querySelector('.scroll-right');
-    
+    //coments
     let currentPosition = 0;
     const imageWidth = smallImages[0].offsetWidth + 16; // Lebar gambar termasuk margin
     let imagesPerPage = Math.floor(photoGallery.offsetWidth / imageWidth); // Jumlah gambar kecil berdasarkan ukuran layar
