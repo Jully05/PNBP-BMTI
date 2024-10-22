@@ -63,6 +63,7 @@ class BuildingAdminController extends Controller
     public function show(string $id)
     {
         $building = Building::findOrFail($id); // Ambil gedung berdasarkan ID
+        $title = 'Layanan Penggunaan Fasilitas Lembaga';
         return view('admin.buildings.show', compact('building')); // Kembali ke view show
     }
 

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +10,9 @@
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrQdP9kPzQ9GMRRO9boM4rK7Huvm+NTIOVZ76v6IX7DQDmw/nzKfT7u15yB+W6AGZ/xxbkZoT7x1g3YFsg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrQdP9kPzQ9GMRRO9boM4rK7Huvm+NTIOVZ76v6IX7DQDmw/nzKfT7u15yB+W6AGZ/xxbkZoT7x1g3YFsg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     <!-- Tambahan FullCalendar CSS dan JS -->
@@ -38,53 +41,71 @@
         });
     </script>
 </head>
-<body class="h-full bg-white
- ">
-<div class="fixed top-0 left-0 w-full z-50 bg-blue-500 text-white">
-    <x-navbar>
-      </x-navbar>
-  </div>
+
+<body class="h-full bg-white">
+    <div class="fixed top-0 left-0 w-full z-50 bg-blue-500 text-white">
+        <x-navbar>
+        </x-navbar>
+    </div>
     <header class="flex justify-center mt-[50px]">
         <div class="justify-center mx-[]">
-        <h1 class="text-1xl md:text-5xl pt-[50px] font-bold pb-[20px] text-center">Gedung Bale Pancawati</h1>
+            <h1 class="text-1xl md:text-5xl pt-[50px] font-bold pb-[20px] text-center">Gedung Bale Pancawati</h1>
         </div>
     </header>
     <div class="flex md:ml-20 items-center  ">
-        <button onclick="window.location.href='/fasilitas'" class="flex items-center mx-10 bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 ">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-4 mr-2 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <button onclick="window.location.href='/fasilitas'"
+            class="flex items-center mx-10 bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 ">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-4 mr-2 " fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 5l-7 7 7 7" />
             </svg>
-            Home 
-        </button>        
+            Home
+        </button>
     </div>
     <div class="min-h-full flex justify-center">
         <main>
             <!-- Bagian Gambar dan Deskripsi -->
-            <div class="max-w-screen-lg flex flex-col md:flex-row justify-between mt-4 mb-6 mx-auto gap-6 mx-10 ">
+            <div class="max-w-screen-lg flex flex-col md:flex-row justify-between mt-4 mb-6 gap-6 mx-10 ">
                 <!--Bagian Gambar-->
                 <div class="w-full md:w-1/2 bg-gradient-to-r from-white-500 to-indigo-500 p-6 rounded-lg shadow-xl">
                     <p class="text-xl font-extrabold mb-10 ">Galeri </p>
                     <div class="w-2xl ">
-                    <img id="mainImage" src="/img/background.jpg" alt="Foto Gedung" class="w-full h-[300px]  ">
+                        <img id="mainImage" src="/img/background.jpg" alt="Foto Gedung" class="w-full h-[300px]  ">
                     </div>
                     <div class="relative w-full mt-6 overflow-hidden">
                         <!-- Tombol Scroll Kiri -->
-                        <button class="scroll-left absolute left-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white text-2xl p-2 rounded-full hover:bg-opacity-75 z-10">
+                        <button
+                            class="scroll-left absolute left-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white text-2xl p-2 rounded-full hover:bg-opacity-75 z-10">
                             &#8249;
                         </button>
                         <!-- Galeri gambar kecil -->
                         <div id="smallImages" class="flex space-x-4 transition-transform duration-300 ">
-                            <img src="/img/background.jpg" alt="Foto 1" class="w-24 h-24 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300" data-src="/img/background.jpg">
-                            <img src="/img/logo-bmti.png" alt="Foto 2" class="w-24 h-24 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300" data-src="/img/logo-bmti.png">
-                            <img src="/img/background.jpg" alt="Foto 2" class="w-24 h-24 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300" data-src="/img/background.jpg">
-                            <img src="/img/logo-bmti.png" alt="Foto 1" class="w-24 h-24 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300" data-src="/img/logo-bmti.png">
-                            <img src="/img/logo-bmti.png" alt="Foto 2" class="w-24 h-24 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300" data-src="/img/images (1).jpeg">
-                            <img src="/img/background.jpg" alt="Foto 2" class="w-24 h-24 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300" data-src="/img/background.jpg">
-                            <img src="/img/logo-bmti.png" alt="Foto 2" class="w-24 h-24 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300" data-src="/img/logo-bmti.png">
+                            <img src="/img/background.jpg" alt="Foto 1"
+                                class="w-24 h-24 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300"
+                                data-src="/img/background.jpg">
+                            <img src="/img/logo-bmti.png" alt="Foto 2"
+                                class="w-24 h-24 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300"
+                                data-src="/img/logo-bmti.png">
+                            <img src="/img/background.jpg" alt="Foto 2"
+                                class="w-24 h-24 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300"
+                                data-src="/img/background.jpg">
+                            <img src="/img/logo-bmti.png" alt="Foto 1"
+                                class="w-24 h-24 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300"
+                                data-src="/img/logo-bmti.png">
+                            <img src="/img/logo-bmti.png" alt="Foto 2"
+                                class="w-24 h-24 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300"
+                                data-src="/img/images (1).jpeg">
+                            <img src="/img/background.jpg" alt="Foto 2"
+                                class="w-24 h-24 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300"
+                                data-src="/img/background.jpg">
+                            <img src="/img/logo-bmti.png" alt="Foto 2"
+                                class="w-24 h-24 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300"
+                                data-src="/img/logo-bmti.png">
                             <!-- Tambahkan gambar lainnya sesuai kebutuhan -->
                         </div>
                         <!-- Tombol Scroll Kanan -->
-                        <button onclick="scrollRight()" class="scroll-right absolute right-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white text-2xl p-2 rounded-full hover:bg-opacity-75 z-10">
+                        <button onclick="scrollRight()"
+                            class="scroll-right absolute right-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white text-2xl p-2 rounded-full hover:bg-opacity-75 z-10">
                             &#8250;
                         </button>
                     </div>
@@ -93,11 +114,15 @@
                 <!-- Bagian Deskripsi dan Harga -->
                 <div class="w-full md:w-1/2  shadow-lg rounded-lg p-6">
                     <p class="text-xl font-extrabold ">Deskripsi</p>
-                    <p class=" to-indigo-500 p-6 rounded-lg shadow-xl text-justify center">Gedung Bale Pancawati adalah salah satu venue acara terkemuka yang terletak di lokasi strategis, menawarkan kemudahan akses dan fasilitas lengkap. Dengan desain arsitektur modern yang memadukan estetika dan fungsi, gedung ini cocok untuk berbagai acara, mulai dari pertemuan bisnis hingga acara sosial dan pernikahan.</p>
+                    <p class=" to-indigo-500 p-6 rounded-lg shadow-xl text-justify center">Gedung Bale Pancawati adalah
+                        salah satu venue acara terkemuka yang terletak di lokasi strategis, menawarkan kemudahan akses
+                        dan fasilitas lengkap. Dengan desain arsitektur modern yang memadukan estetika dan fungsi,
+                        gedung ini cocok untuk berbagai acara, mulai dari pertemuan bisnis hingga acara sosial dan
+                        pernikahan.</p>
                     <h2 class="text-xl font-extrabold mt-5 ">Harga</h2>
                     <div class="mt-5  to-indigo-500 p-6 rounded-lg shadow-xl ">
                         <table class=" ">
-                             <thead>
+                            <thead>
                                 <tr>
                                     <th class="px-4 py-2  text-left">Status Pemakaian</th>
                                     <th class="px-4 py-2 text-left">Biaya Retribusi</th>
@@ -123,18 +148,23 @@
                 <!-- Fasilitas -->
                 <div class="w-full md:w-1/2 shadow-lg rounded-lg p-6">
                     <h2 class="text-xl font-extrabold mb-4 ">Fasilitas</h2>
-                    <ul class="bg-gradient-to-r from-white-500 to-indigo-500 p-6 rounded-lg shadow-xl text-justify center">
+                    <ul
+                        class="bg-gradient-to-r from-white-500 to-indigo-500 p-6 rounded-lg shadow-xl text-justify center">
                         <li class="flex items-center">
-                            <i class="fas fa-couch fa-sm text-blue-500 mr-2"></i> Ruang Acara: Ruang yang luas dan fleksibel, dapat disesuaikan untuk berbagai jenis acara.
+                            <i class="fas fa-couch fa-sm text-blue-500 mr-2"></i> Ruang Acara: Ruang yang luas dan
+                            fleksibel, dapat disesuaikan untuk berbagai jenis acara.
                         </li>
                         <li class="flex items-center">
-                            <i class="fas fa-snowflake fa-sm text-blue-500 mr-2"></i> AC: Sistem pendingin udara yang efisien untuk menjaga suhu ruangan tetap nyaman.
+                            <i class="fas fa-snowflake fa-sm text-blue-500 mr-2"></i> AC: Sistem pendingin udara yang
+                            efisien untuk menjaga suhu ruangan tetap nyaman.
                         </li>
                         <li class="flex items-center">
-                            <i class="fas fa-wifi fa-sm text-blue-500 mr-2"></i> Wi-Fi: Koneksi internet berkecepatan tinggi untuk mendukung kegiatan online.
+                            <i class="fas fa-wifi fa-sm text-blue-500 mr-2"></i> Wi-Fi: Koneksi internet berkecepatan
+                            tinggi untuk mendukung kegiatan online.
                         </li>
                         <li class="flex items-center">
-                            <i class="fas fa-car fa-sm text-blue-500 mr-2"></i> Parkir: Area parkir yang cukup untuk menampung banyak kendaraan.
+                            <i class="fas fa-car fa-sm text-blue-500 mr-2"></i> Parkir: Area parkir yang cukup untuk
+                            menampung banyak kendaraan.
                         </li>
                     </ul>
                 </div>
@@ -152,11 +182,11 @@
                                 &#8250;
                             </button>
                         </div>
+                    </div>
                 </div>
-            </div>
         </main>
     </div>
     <x-footer></x-footer>
 </body>
-</html>
 
+</html>
