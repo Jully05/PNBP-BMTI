@@ -2,11 +2,13 @@
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div class="flex h-16 items-center justify-between">
                 <div class="flex items-center">
-                    <a href="/">
-                        <div class="flex-shrink-0">
-                            <img class="h-8 w-8" src="img/logo-bmti.png" alt="Your Company">
-                        </div>
-                    </a>
+                    <div class="pr-[300px]">
+                        <a href="/">
+                            <div class="flex-shrink-0">
+                                <img class="h-8 w-8" src="img/logo-bmti.png" alt="Your Company">
+                            </div>
+                        </a>
+                    </div>
                     <div class="hidden md:block">
                         <div class="ml-10 flex items-center space-x-4">
                             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
@@ -18,14 +20,13 @@
                                             stroke-width="2" d="M9 3L3 9h2v6h4V11h2v4h4V9h2L9 3z" />
                                     </svg>
                                     <h1>
-                                        PNBP
+                                        HOME
                                     </h1>
                                 </div>
                             </x-nav-link>
                             <x-nav-link href="/fasilitas" :active="request()->is('fasilitas')">Fasilitas Lembaga</x-nav-link>
-                            <x-nav-link href="/magang" :active="request()->is('magang')">Magang</x-nav-link>
+                            <x-nav-link href="/register" :active="request()->is('register')">Magang</x-nav-link>
                             <x-nav-link href="#" :active="request()->is('#')">Kunj-In</x-nav-link>
-                            <x-nav-link href="#" :active="request()->is('#')">Prioritas</x-nav-link>
                         </div>
                     </div>
                 </div>
@@ -70,9 +71,8 @@
                 </x-nav-link>
                 <x-nav-link href="/fasilitas" :active="request()->is('fasilitas')">Layanan Penggunaan Fasilitas
                     Lembaga</x-nav-link>
-                <x-nav-link href="/magang" :active="request()->is('magang')">Layanan Magang ( PKL )</x-nav-link>
+                <x-nav-link href="/register" :active="request()->is('register')">Layanan Magang ( PKL )</x-nav-link>
                 <x-nav-link href="#" :active="request()->is('#')">Layanan Kunjungan ( Studi Tour )</x-nav-link>
-                <x-nav-link href="#" :active="request()->is('#')">layanan Prioritas</x-nav-link>
             </div>
         </div>
     </nav>

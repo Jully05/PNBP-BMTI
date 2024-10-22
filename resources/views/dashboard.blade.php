@@ -1,9 +1,7 @@
 <x-layout>
     <x-slot:title>{{ $title }}</x-slot:title>
-    {{-- meanggil component navbar.blade.php menggunakan x-navbar --}}
-    <x-navbar></x-navbar>
 
-    <x-header>Pendapatan Negara Bukan Pajak</x-header>
+    <x-header>Okupasi Gedung</x-header>
 
     <div class="min-h-full bg-white pb-10">
         <main>
@@ -142,7 +140,4 @@
             <x-whatsapp-admin></x-whatsapp-admin>
         </main>
     </div>
-
-    <x-footer></x-footer>
-
 </x-layout>

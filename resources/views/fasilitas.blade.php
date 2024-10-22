@@ -1,6 +1,5 @@
 <x-layout>
     <x-slot:title>{{ $title }}</x-slot:title>
-    <x-navbar></x-navbar>
 
     <x-header>Layanan Penggunaan Fasilitas Lembaga</x-header>
 
@@ -32,9 +31,9 @@
                     Sewa
                 </h1>
                 <div class="mt-[70px] flex flex-col md:flex-row gap-14">
-                    {{-- card 1 --}}
+                    {{-- Alur 1 --}}
                     <div
-                        class="bg-white p-[5px] border border-white shadow-2xl rounded-xl w-full max-w-[300px] mx-auto md:mx-0">
+                        class="bg-white p-[5px] border-2 hover:shadow-xl border-gray rounded-xl w-full max-w-[300px] mx-auto md:mx-0">
                         <div class="ml-6 mt-3"><img src="img/gedung.png" alt="" class="w-10 h-10"></div>
                         <h1
                             class="rounded flex justify-center items-center text-2xl bg-blue-500 py-2 mt-2 text-white font-bold">
@@ -45,9 +44,9 @@
                             sesuai
                             dengan kebutuhan dan anggaran Anda.</h2>
                     </div>
-                    {{-- card 2 --}}
+                    {{-- Alur 2 --}}
                     <div
-                        class="bg-white p-[5px] border border-white shadow-2xl rounded-xl w-full max-w-[300px] mx-auto md:mx-0">
+                        class="bg-white p-[5px] border-2 hover:shadow-xl border-gray rounded-xl w-full max-w-[300px] mx-auto md:mx-0">
                         <div class="ml-6 mt-3"><img src="img/calender.png" alt="" class="w-10 h-10"></div>
                         <h1
                             class="rounded flex justify-center items-center text-2xl bg-blue-500 py-2 mt-2 text-white font-bold">
@@ -58,9 +57,9 @@
                             dan
                             tanggal untuk memastikan kondisi dan fasilitas gedung sesuai dengan yang dijanjikan.</h2>
                     </div>
-                    {{-- card 3 --}}
+                    {{-- Alur 3 --}}
                     <div
-                        class="bg-white p-[5px] border border-white shadow-2xl rounded-xl w-full max-w-[300px] mx-auto md:mx-0">
+                        class="bg-white p-[5px] border-2 hover:shadow-xl border-gray rounded-xl w-full max-w-[300px] mx-auto md:mx-0">
                         <div class="ml-6 mt-3"><img src="img/whatsapp.png" alt="" class="w-10 h-10"></div>
                         <h1
                             class="rounded flex justify-center items-center text-2xl bg-blue-500 py-2 mt-2 text-white font-bold">
@@ -75,18 +74,44 @@
                     </div>
                 </div>
 
-                {{-- Card --}}
+                {{-- Card Gedung --}}
                 <h1
-                    class="md:text-3xl text-xl font-bold flex justify-center item-center mt-[130px] tracking-wide text-center">
+                    class="md:text-3xl text-xl font-bold flex justify-center item-center mt-20 md:mt-[130px] tracking-wide text-center">
                     Daftar Sewa Gedung
                 </h1>
-                <x-card></x-card>
+
+                <div class="bg-white mt-[50px] px-2 py-4 max-w-sm md:max-w-6xl flex overflow-x-auto hide-scrollbar">
+                    <div class="flex gap-7 min-w-max">
+                        @foreach ($buildings as $building)
+                            <!-- Card 1 -->
+                            <div
+                                class="max-w-xs md:max-w-xs w-52 md:w-auto rounded md:h-auto shadow-xl bg-white flex-shrink-0">
+                                <img class="w-full h-40 object-cover" src="{{ asset($building->image) }}"
+                                    alt="Nama Gedung">
+                                <div class="px-4 py-3">
+                                    <div class="font-bold text-lg mb-2">{{ $building->name }}</div>
+                                    <div class="flex justify-between items-center">
+                                        <span class="text-gray-700 text-sm">Rp {{ number_format($building->price, 2) }}
+                                            / hari</span>
+                                    </div>
+                                    <div class="pt-3 md:h-10 hidden md:block">
+                                        <p class="font-light">{{ Str::limit($building->description, 50) }}</p>
+                                    </div>
+                                </div>
+                                <div class="px-4 py-3">
+                                    <a href="{{ route('buildings.show', $building->id) }}"
+                                        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1.5 px-3 rounded w-full text-center block tracking-widest">
+                                        Lihat Detail &raquo;
+                                    </a>
+                                </div>
+                            </div>
+                        @endforeach
+                    </div>
+                </div>
 
                 {{-- Icon Whatsapp Admin --}}
                 <x-whatsapp-admin></x-whatsapp-admin>
             </div>
         </main>
     </div>
-
-    <x-footer></x-footer>
 </x-layout>

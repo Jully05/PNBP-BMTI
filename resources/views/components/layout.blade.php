@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="h-full bg-gray-100">
+<html lang="en" class="h-full bg-white">
 
 <head>
     <meta charset="UTF-8">
@@ -13,8 +13,9 @@
     <script>
         window.addEventListener('scroll', function() {
             const navbar = document.getElementById('navbar');
-            if (window.scrollY > 700) { // Ketika scroll lebih dari 50px
-                navbar.classList.add('bg-blue-500'); // Menambahkan efek blur dan background semi transparan
+            if (window.scrollY > 650) { // Ketika scroll lebih dari 50px
+                navbar.classList.add(
+                    'bg-blue-500'); // Menambahkan efek blur dan background semi transparan
             } else {
                 navbar.classList.remove('bg-blue-500'); // Menghilangkan efek blur saat kembali ke atas
             }
@@ -32,7 +33,9 @@
 </head>
 
 <body class="h-full">
+    <x-navbar></x-navbar>
     {{ $slot }}
+    <x-footer></x-footer>
 </body>
 
 </html>
