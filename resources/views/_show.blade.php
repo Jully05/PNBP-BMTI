@@ -1,192 +1,196 @@
-<!DOCTYPE html>
-<html lang="id">
+<x-layout>
+    <x-slot:title>{{ $title }}</x-slot:title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detail Gedung</title>
-    @vite('resources/css/app.css')
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-        integrity="sha512-Fo3rlrQdP9kPzQ9GMRRO9boM4rK7Huvm+NTIOVZ76v6IX7DQDmw/nzKfT7u15yB+W6AGZ/xxbkZoT7x1g3YFsg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-    <!-- Tambahan FullCalendar CSS dan JS -->
-    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.css" rel="stylesheet" />
-    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.js"></script>
-    <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
-    <link rel="stylesheet" href="{{ mix('css/app.css') }}">
-    <script defer src="{{ asset('js/scripts.js') }}"></script>
-    <script>
-        window.addEventListener('scroll', function() {
-            const navbar = document.getElementById('navbar');
-            if (window.scrollY > 0) { // Ketika scroll lebih dari 0px
-                navbar.classList.add('bg-blue-500'); // Menambahkan warna biru pekat
-            } else {
-                navbar.classList.remove('bg-blue-500'); // Menghilangkan warna biru pekat saat kembali ke atas
-            }
-        });
-        // Fungsi untuk mendeteksi scroll
-        window.addEventListener('scroll', function() {
-            const whatsappBtn = document.getElementById('whatsappBtn');
-            if (window.scrollY > 500) { // Menampilkan tombol setelah scroll 500px
-                whatsappBtn.classList.add('show');
-            } else {
-                whatsappBtn.classList.remove('show');
-            }
-        });
-    </script>
-</head>
+    <x-header>Okupasi Gedung</x-header>
 
-<body class="h-full bg-white">
-    <div class="fixed top-0 left-0 w-full z-50 bg-blue-500 text-white">
-        <x-navbar>
-        </x-navbar>
-    </div>
-    <header class="flex justify-center mt-[50px]">
-        <div class="justify-center mx-[]">
-            <h1 class="text-1xl md:text-5xl pt-[50px] font-bold pb-[20px] text-center">Gedung Bale Pancawati</h1>
-        </div>
-    </header>
-    <div class="flex md:ml-20 items-center  ">
-        <button onclick="window.location.href='/fasilitas'"
-            class="flex items-center mx-10 bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 ">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-4 mr-2 " fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 5l-7 7 7 7" />
-            </svg>
-            Home
-        </button>
-    </div>
-    <div class="min-h-full flex justify-center">
+    <div class="min-h-full pb-10">
         <main>
-            <!-- Bagian Gambar dan Deskripsi -->
-            <div class="max-w-screen-lg flex flex-col md:flex-row justify-between mt-4 mb-6 gap-6 mx-10 ">
-                <!--Bagian Gambar-->
-                <div class="w-full md:w-1/2 bg-gradient-to-r from-white-500 to-indigo-500 p-6 rounded-lg shadow-xl">
-                    <p class="text-xl font-extrabold mb-10 ">Galeri </p>
-                    <div class="w-2xl ">
-                        <img id="mainImage" src="/img/background.jpg" alt="Foto Gedung" class="w-full h-[300px]  ">
-                    </div>
-                    <div class="relative w-full mt-6 overflow-hidden">
-                        <!-- Tombol Scroll Kiri -->
-                        <button
-                            class="scroll-left absolute left-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white text-2xl p-2 rounded-full hover:bg-opacity-75 z-10">
-                            &#8249;
-                        </button>
-                        <!-- Galeri gambar kecil -->
-                        <div id="smallImages" class="flex space-x-4 transition-transform duration-300 ">
-                            <img src="/img/background.jpg" alt="Foto 1"
-                                class="w-24 h-24 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300"
-                                data-src="/img/background.jpg">
-                            <img src="/img/logo-bmti.png" alt="Foto 2"
-                                class="w-24 h-24 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300"
-                                data-src="/img/logo-bmti.png">
-                            <img src="/img/background.jpg" alt="Foto 2"
-                                class="w-24 h-24 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300"
-                                data-src="/img/background.jpg">
-                            <img src="/img/logo-bmti.png" alt="Foto 1"
-                                class="w-24 h-24 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300"
-                                data-src="/img/logo-bmti.png">
-                            <img src="/img/logo-bmti.png" alt="Foto 2"
-                                class="w-24 h-24 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300"
-                                data-src="/img/images (1).jpeg">
-                            <img src="/img/background.jpg" alt="Foto 2"
-                                class="w-24 h-24 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300"
-                                data-src="/img/background.jpg">
-                            <img src="/img/logo-bmti.png" alt="Foto 2"
-                                class="w-24 h-24 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300"
-                                data-src="/img/logo-bmti.png">
-                            <!-- Tambahkan gambar lainnya sesuai kebutuhan -->
-                        </div>
-                        <!-- Tombol Scroll Kanan -->
-                        <button onclick="scrollRight()"
-                            class="scroll-right absolute right-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white text-2xl p-2 rounded-full hover:bg-opacity-75 z-10">
-                            &#8250;
-                        </button>
-                    </div>
-                </div>
+            <div class="px-20">
+                <h1 class="md:text-3xl text-xl font-bold flex item-center px-10 pt-5 tracking-wide text-center">
+                    Daftar Sewa Gedung
+                </h1>
 
-                <!-- Bagian Deskripsi dan Harga -->
-                <div class="w-full md:w-1/2  shadow-lg rounded-lg p-6">
-                    <p class="text-xl font-extrabold ">Deskripsi</p>
-                    <p class=" to-indigo-500 p-6 rounded-lg shadow-xl text-justify center">Gedung Bale Pancawati adalah
-                        salah satu venue acara terkemuka yang terletak di lokasi strategis, menawarkan kemudahan akses
-                        dan fasilitas lengkap. Dengan desain arsitektur modern yang memadukan estetika dan fungsi,
-                        gedung ini cocok untuk berbagai acara, mulai dari pertemuan bisnis hingga acara sosial dan
-                        pernikahan.</p>
-                    <h2 class="text-xl font-extrabold mt-5 ">Harga</h2>
-                    <div class="mt-5  to-indigo-500 p-6 rounded-lg shadow-xl ">
-                        <table class=" ">
-                            <thead>
-                                <tr>
-                                    <th class="px-4 py-2  text-left">Status Pemakaian</th>
-                                    <th class="px-4 py-2 text-left">Biaya Retribusi</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr class="border-b">
-                                    <td class="px-4 py-2">Pagi</td>
-                                    <td class="px-4 py-2">Rp. 2.500.000,00</td>
-                                </tr>
-                                <tr>
-                                    <td class="px-4 py-2">Malam</td>
-                                    <td class="px-4 py-2">Rp. 5.000.000,00</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                <div class="relative px-10 py-4 max-w-sm md:max-w-7xl">
+                    <!-- Tombol untuk menggeser ke kiri -->
+                    <button id="scroll-left"
+                        class="hidden md:block absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white px-2 py-3 rounded-full z-10">
+                        &#8249;
+                    </button>
+
+                    <!-- Container yang bisa di-scroll dengan scrollbar tersembunyi -->
+                    <div id="building-container" class="flex gap-2 overflow-x-auto min-w-full hide-scrollbar">
+                        @foreach ($buildings as $building)
+                            <a href="{{ route('buildings.show', $building->id) }}">
+                                <div
+                                    class="max-w-xs md:max-w-xs w-52 md:w-64 rounded-md md:h-auto shadow-lg bg-white flex-shrink-0">
+                                    <img class="w-full h-40 object-cover" src="{{ asset($building->image) }}"
+                                        alt="Nama Gedung">
+                                    <div class="px-4 py-1">
+                                        <div class="font-bold text-lg mb-1">{{ $building->name }}</div>
+                                    </div>
+                                </div>
+                            </a>
+                        @endforeach
+                    </div>
+
+                    <!-- Tombol untuk menggeser ke kanan -->
+                    <button id="scroll-right"
+                        class="hidden md:block absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white px-2 py-3 rounded-full z-10">
+                        &#8250;
+                    </button>
+                </div>
+            </div>
+
+            <!-- Konten lainnya -->
+            <div class="px-10 py-20 flex flex-col justify-center gap-10">
+                <div class="flex flex-col justify-center text-center md:text-3xl text-xl font-bold">
+                    <h1>Selamat Datang Di Pendapatan Negara Bukan Pajak ( PNBP )</h1>
+                    <h1>BBPPMPV BMTI</h1>
+                </div>
+                <div class="flex justify-center">
+                    <p class="text-center md:w-[700px] w-[300px]">Selamat datang di portal resmi Pendapatan Negara Bukan
+                        Pajak (
+                        PNBP )
+                        BBPPMV BMTI! <br> Di sini, kami
+                        berkomitmen untuk memberikan informasi lengkap dan transparan tentang berbagai layanan kami yang
+                        mendukung kemajuan bangsa. Melalui platform ini, Anda bisa mengakses berbagai layanan unggulan
+                        yang ditawarkan oleh lembaga kami.</p>
+                </div>
+            </div>
+
+            <div class="flex justify-center pb-10">
+                <h1 class="font-bold md:text-3xl text-xl">Pelayanan</h1>
+            </div>
+
+            {{-- card baris 1 --}}
+            <div class="mx-auto max-w-7xl px-4 py-6 flex justify-center sm:px-6 lg:px-8">
+                <div class="md:flex md:flex-row flex-col justify-center md:gap-10">
+                    <div
+                        class="bg-sky-400 md:w-96 w-[250px] md:h-60 h-auto px-5 py-3 mb-8 rounded-md border-2 border-blue-500 hover:shadow-xl ">
+                        <div class="flex gap-5 pb-5 items-center">
+                            <img class="h-8 w-8" src="img/logo-bmti.png" alt="">
+                            <div class="h-[30%]">
+                                <h1 class="text-2xl font-bold">Layanan Penggunaan Fasilitas Lembaga</h1>
+                            </div>
+                        </div>
+                        <div class="min-h-[40%]">
+                            <p>informasi</p>
+                        </div>
+                        <div>
+                            <a href="#" data-modal-target="select-modal" data-modal-toggle="select-modal"
+                                class="inline-flex font-medium items-center text-blue-600 hover:underline">
+                                Open
+                                <svg class="w-3 h-3 ms-2.5 rtl:rotate-[270deg]" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778">
+                                    </path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-sky-400 md:w-96 w-[250px] md:h-60 h-auto px-5 py-3 mb-8 rounded-md border-2 border-blue-500 hover:shadow-xl ">
+                        <div class="flex gap-5 pb-5 items-center">
+                            <img class="h-8 w-8" src="img/logo-bmti.png" alt="">
+                            <div class="h-[30%]">
+                                <h1 class="text-2xl font-bold">Layanan Magang ( PKL )</h1>
+                            </div>
+                        </div>
+                        <div class="min-h-[40%]">
+                            <p>informasi</p>
+                        </div>
+                        <div>
+                            <a href="#" data-modal-target="select-modal" data-modal-toggle="select-modal"
+                                class="inline-flex font-medium items-center text-blue-600 hover:underline">
+                                Open
+                                <svg class="w-3 h-3 ms-2.5 rtl:rotate-[270deg]" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778">
+                                    </path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-sky-400 md:w-96 w-[250px] md:h-60 h-auto px-5 py-3 mb-8 rounded-md border-2 border-blue-500 hover:shadow-xl ">
+                        <div class="flex gap-5 items-center pb-5">
+                            <img class="h-8 w-8" src="img/logo-bmti.png" alt="">
+                            <div class="h-[30%]">
+                                <h1 class="text-2xl font-bold">Layanan Kunjungan <br> ( Study Tour )</h1>
+                            </div>
+                        </div>
+                        <div class="min-h-[40%]">
+                            <p>informasi</p>
+                        </div>
+                        <div>
+                            <a href="#" data-modal-target="select-modal" data-modal-toggle="select-modal"
+                                class="inline-flex font-medium items-center text-blue-600 hover:underline">
+                                Open
+                                <svg class="w-3 h-3 ms-2.5 rtl:rotate-[270deg]" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778">
+                                    </path>
+                                </svg>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Bagian Fasilitas dan Jadwal -->
-            <div class="max-w-screen-lg flex flex-col md:flex-row justify-between mt-10 mx-auto gap-6 mb-10 mx-10">
-                <!-- Fasilitas -->
-                <div class="w-full md:w-1/2 shadow-lg rounded-lg p-6">
-                    <h2 class="text-xl font-extrabold mb-4 ">Fasilitas</h2>
-                    <ul
-                        class="bg-gradient-to-r from-white-500 to-indigo-500 p-6 rounded-lg shadow-xl text-justify center">
-                        <li class="flex items-center">
-                            <i class="fas fa-couch fa-sm text-blue-500 mr-2"></i> Ruang Acara: Ruang yang luas dan
-                            fleksibel, dapat disesuaikan untuk berbagai jenis acara.
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-snowflake fa-sm text-blue-500 mr-2"></i> AC: Sistem pendingin udara yang
-                            efisien untuk menjaga suhu ruangan tetap nyaman.
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-wifi fa-sm text-blue-500 mr-2"></i> Wi-Fi: Koneksi internet berkecepatan
-                            tinggi untuk mendukung kegiatan online.
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-car fa-sm text-blue-500 mr-2"></i> Parkir: Area parkir yang cukup untuk
-                            menampung banyak kendaraan.
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Jadwal Sewa (Kalender) -->
-                <div class="w-full md:w-1/2 shadow-lg rounded-lg p-6">
-                    <h2 class="text-xl font-extrabold mb-4">Jadwal Sewa</h2>
-                    <div id="calendar" class="w-full h-64 bg-gray-200 rounded-lg relative">
-                        <div class="flex justify-between items-center absolute top-2 left-0 right-0">
-                            <button id="prevMonth" class="text-sm bg-gray-300 p-1 rounded hover:bg-gray-400">
-                                &#8249;
-                            </button>
-                            <div class="text-lg font-bold">Bulan Tahun</div> <!-- Ganti dengan nama bulan dan tahun -->
-                            <button id="nextMonth" class="text-sm bg-gray-300 p-1 rounded hover:bg-gray-400">
-                                &#8250;
-                            </button>
-                        </div>
-                    </div>
-                </div>
+            <x-whatsapp-admin></x-whatsapp-admin>
         </main>
     </div>
-    <x-footer></x-footer>
-</body>
 
-</html>
+    <style>
+        /* Sembunyikan scrollbar di desktop */
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            /* IE and Edge */
+            scrollbar-width: none;
+            /* Firefox */
+        }
+
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+            /* Chrome, Safari, and Opera */
+        }
+    </style>
+
+    <script>
+        // Mendapatkan elemen container dan tombol geser
+        const container = document.getElementById('building-container');
+        const scrollLeftBtn = document.getElementById('scroll-left');
+        const scrollRightBtn = document.getElementById('scroll-right');
+
+        // Fungsi untuk menggeser ke kanan atau kiri
+        function scrollContainer(direction) {
+            container.scrollBy({
+                left: direction * 300, // Menggeser 300px setiap kali tombol ditekan
+                behavior: 'smooth'
+            });
+        }
+
+        // Event listener untuk tombol geser
+        scrollLeftBtn.addEventListener('click', () => scrollContainer(-1));
+        scrollRightBtn.addEventListener('click', () => scrollContainer(1));
+
+        // Periksa jika ada konten overflow untuk menampilkan tombol
+        function checkScrollButtons() {
+            const maxScrollLeft = container.scrollWidth - container.clientWidth;
+            scrollLeftBtn.style.display = container.scrollLeft > 0 ? 'block' : 'none';
+            scrollRightBtn.style.display = container.scrollLeft < maxScrollLeft ? 'block' : 'none';
+        }
+
+        // Event untuk menampilkan/menghilangkan tombol ketika scrolling
+        container.addEventListener('scroll', checkScrollButtons);
+
+        // Periksa saat halaman dimuat
+        window.addEventListener('load', checkScrollButtons);
+    </script>
+</x-layout>

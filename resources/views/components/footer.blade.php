@@ -1,17 +1,17 @@
-<footer class="bg-white md:mt-20 h-[250px] md:h-[180px] ">
+<footer class=" md:mt-10 h-[250px] md:h-[180px] ">
     <div class="flex flex-col md:flex-row text-center justify-center md:gap-12 gap-1 w-300px">
-        <a href="" class="hover:text-blue-500 md:text-sm text-xs font-semibold leading-6 text-gray-500">Privacy</a>
-        <a href="" class="hover:text-blue-500 md:text-sm text-xs font-semibold leading-6 text-gray-500">Blog</a>
-        <a href="" class="hover:text-blue-500 md:text-sm text-xs font-semibold leading-6 text-gray-500">Tentang
+        <a href="" class="hover:text-blue-700 md:text-sm text-xs font-semibold leading-6 text-gray-700">Privacy</a>
+        <a href="" class="hover:text-blue-700 md:text-sm text-xs font-semibold leading-6 text-gray-700">Blog</a>
+        <a href="" class="hover:text-blue-700 md:text-sm text-xs font-semibold leading-6 text-gray-700">Tentang
             Kami</a>
-        <a href="" class="hover:text-blue-500 md:text-sm text-xs font-semibold leading-6 text-gray-500">Ketentuan
+        <a href="" class="hover:text-blue-700 md:text-sm text-xs font-semibold leading-6 text-gray-700">Ketentuan
             Layanan</a>
         <a href="https://wa.me/628112242326"
-            class="hover:text-blue-500 md:text-sm text-xs font-semibold leading-6 text-gray-500">Hubungi
+            class="hover:text-blue-700 md:text-sm text-xs font-semibold leading-6 text-gray-700">Hubungi
             Kami</a>
     </div>
     <div class="flex justify-center gap-3 md:py-10 pt-5">
-        <a href="https://www.facebook.com/bmti.kemdikbud/" target="_blank" class="text-gray-400 hover:text-blue-500">
+        <a href="https://www.facebook.com/bmti.kemdikbud/" target="_blank" class="text-gray-700 hover:text-blue-700">
             <span class="sr-only">Facebook</span>
             <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
                 <path fill-rule="evenodd"
@@ -20,7 +20,7 @@
                 </path>
             </svg>
         </a>
-        <a href="https://www.instagram.com/bmti.kemdikbud/" target="_blank" class="text-gray-400 hover:text-blue-500">
+        <a href="https://www.instagram.com/bmti.kemdikbud/" target="_blank" class="text-gray-700 hover:text-blue-700">
             <span class="sr-only">Instagram</span>
             <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
                 <path fill-rule="evenodd"
@@ -28,7 +28,7 @@
                     clip-rule="evenodd"></path>
             </svg>
         </a>
-        <a href="https://x.com/bmti_kemdikbud" target="_blank" class="text-gray-400 hover:text-blue-500">
+        <a href="https://x.com/bmti_kemdikbud" target="_blank" class="text-gray-700 hover:text-blue-700">
             <span class="sr-only">Twitter</span>
             <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
                 <path
@@ -37,7 +37,7 @@
             </svg>
         </a>
     </div>
-    <p class="mt-5 md:mt-0 md:text-base text-xs text-center text-gray-400">
+    <p class="mt-5 md:mt-0 md:text-base text-xs text-center text-gray-700">
         © 2024 BBPPMPV BMTI, Inc. All rights reserved.
     </p>
 </footer>

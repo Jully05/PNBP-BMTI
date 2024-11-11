@@ -3,12 +3,12 @@
 
     <x-header>Layanan Magang ( PKL )</x-header>
 
-    <div class="bg-white min-h-full md:px-10 pt-10">
+    <div class="min-h-full md:px-10 pt-10">
         <main>
             <div class="flex flex-col md:flex-row justify-center gap-10 md:gap-0">
                 <div class="md:w-[50%] flex flex-col gap-5">
-                    <div class="bg-white  md:h-[400px] flex justify-center items-center">
-                        <div class="bg-white w-[90%] h-[90%] px-4 py-2 shadow-2xl rounded-lg">
+                    <div class="  md:h-[400px] flex justify-center items-center">
+                        <div class="bg-gray-200 w-[90%] h-[90%] px-4 py-2 shadow-2xl rounded-lg">
                             <div class="flex flex-col item-center justify-center text-justify gap-3">
                                 <h1
                                     class="font-bold tracking-wider text-white text-xl bg-blue-500 rounded-lg text-center md:w-[100%] md:py-2 py-1 md:px-0 px-1">
@@ -47,13 +47,16 @@
             </div>
 
             <div class="flex flex-col md:flex-row justify-center mt-10 gap-5 md:gap-0">
-                <div class="md:w-[50%] md:h-[400px] flex justify-center items-center">
-                    <div class="bg-neutral-100 w-[90%] h-full px-4 py-2 shadow-2xl rounded-lg">
+                <div
+                    class="md:w-[50%] md:h-[360px] flex justify-center items-center hover:scale-110 focus:outline-none focus:ring-2">
+                    <div
+                        class="bg-gradient-to-r from-violet-500 to-fuchsia-500 w-[90%] h-full px-4 py-2 shadow-2xl rounded-lg">
                         <div class="flex flex-col item-center justify-center text-justify gap-3">
                             <h1
-                                class="text-blue-900 bg-yellow-500 text-center py-2 md:text-4xl rounded-lg shadow-xl font-bold tracking-wide">
+                                class="text-blue-900 bg-yellow-500 text-center py-2 md:text-3xl rounded-lg shadow-xl font-bold tracking-wide">
                                 Persyaratan Administrasi</h1>
-                            <ul class="list-decimal md:mx-5 flex flex-col gap-4 mt-5 md:text-xl text-sm px-5 pb-5">
+                            <ul
+                                class="list-decimal md:mx-5 flex flex-col gap-4 mt-5 md:text-xl text-sm px-5 pb-5 text-white">
                                 <li>
                                     Terdaftar dalam surat pemanggilan
                                 </li>
@@ -70,13 +73,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="md:w-[50%] md:h-[400px] flex justify-center items-center">
-                    <div class="bg-neutral-100 w-[90%] h-full px-4 py-2 shadow-2xl rounded-lg">
+                <div
+                    class="md:w-[50%] md:h-[360px] flex justify-center items-center hover:scale-110 focus:outline-none focus:ring-2">
+                    <div
+                        class="bg-gradient-to-r from-violet-500 to-fuchsia-500 w-[90%] h-full px-4 py-2 shadow-2xl rounded-lg">
                         <div class="flex flex-col item-center justify-center text-justify gap-3">
                             <h1
-                                class="text-blue-900 bg-yellow-500 text-center py-2 md:text-4xl rounded-lg shadow-xl font-bold tracking-wide">
+                                class="text-blue-900 bg-yellow-500 text-center py-2 md:text-2xl rounded-lg shadow-xl font-bold tracking-wide">
                                 Sistem, Mekanisme dan Prosedur Pekayaan</h1>
-                            <ul class="list-decimal md:mx-5 flex flex-col gap-4 mt-5 text-sm md:text-xl px-5 pb-5">
+                            <ul
+                                class="list-decimal md:mx-5 flex flex-col gap-4 mt-5 text-sm md:text-xl px-5 pb-5 text-white">
                                 <li>
                                     Sekolah/Universitas/ Perguruan tinggi mengajukan surat permohonan dan melampirkan
                                     proposal.
@@ -97,13 +103,16 @@
             </div>
 
             <div class="flex flex-col md:flex-row justify-center md:mt-0 mt-5 md:gap-0 gap-5">
-                <div class="md:w-[50%] md:h-[400px] flex justify-center items-center">
-                    <div class="bg-neutral-100 w-[90%] h-[80%] px-4 py-2 shadow-2xl rounded-lg">
+                <div
+                    class="md:w-[50%] md:h-[400px] flex justify-center items-center hover:scale-110 focus:outline-none focus:ring-2">
+                    <div
+                        class="bg-gradient-to-b from-purple-500 to-pink-500 w-[90%] h-[80%] px-4 py-2 shadow-2xl rounded-lg">
                         <div class="flex flex-col item-center justify-center text-justify gap-3">
                             <h1
-                                class="text-blue-900 bg-yellow-500 text-center py-2 md:text-4xl rounded-lg shadow-xl font-bold tracking-wide">
+                                class="text-blue-900 bg-yellow-500 text-center py-2 md:text-2xl rounded-lg shadow-xl font-bold tracking-wide">
                                 Jangka Waktu Penyelesaian</h1>
-                            <ul class="list-disc md:mx-5 flex flex-col gap-4 mt-5 text-sm md:text-xl px-5 pb-5">
+                            <ul
+                                class="list-disc md:mx-5 flex flex-col gap-4 mt-5 text-sm md:text-xl px-5 pb-5 text-white">
                                 <li>
                                     5 hari kerja untuk surat jawaban permohonan PKL
                                 </li>
@@ -118,33 +127,35 @@
                         </div>
                     </div>
                 </div>
-                <div class="md:w-[50%] md:h-[400px] flex justify-center items-center">
-                    <div class="bg-neutral-100 w-[90%] h-[80%] px-4 py-2 shadow-2xl rounded-lg">
+                <div
+                    class="md:w-[50%] md:h-[400px] flex justify-center items-center hover:scale-110 focus:outline-none focus:ring-2">
+                    <div
+                        class="bg-gradient-to-b from-purple-500 to-pink-500 w-[90%] h-[80%] px-4 py-2 shadow-2xl rounded-lg">
                         <div class="flex flex-col item-center justify-center text-justify md:gap-3">
                             <h1
-                                class="text-blue-900 bg-yellow-500 text-center py-2 md:text-4xl rounded-lg shadow-xl font-bold tracking-wide">
+                                class="text-blue-900 bg-yellow-500 text-center py-2 md:text-2xl rounded-lg shadow-xl font-bold tracking-wide">
                                 Produk Layanan</h1>
-                            <div class="text-sm md:text-xl mt-5 flex flex-col gap-2 pb-5">
+                            <div class="text-sm md:text-xl mt-5 flex flex-col gap-2 pb-5 text-white">
                                 <h1>Pelaksanaan PKL/Prakerin</h1>
                                 <h1>Penelitian/Magang</h1>
                             </div>
                             <h1
-                                class="text-blue-900 bg-yellow-500 text-center py-2 md:text-4xl rounded-lg shadow-xl font-bold tracking-wide">
+                                class="text-blue-900 bg-yellow-500 text-center py-2 md:text-2xl rounded-lg shadow-xl font-bold tracking-wide">
                                 Biaya</h1>
-                            <h1 class="text-sm md:text-xl pb-5 pt-3">Tidak Berbayar ( GRATIS! )</h1>
+                            <h1 class="text-sm md:text-xl pb-5 pt-3 text-white">Tidak Berbayar ( GRATIS! )</h1>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class=" w-full flex flex-col h-auto justify-center items-center" x-data="{ isOpen: false }">
-                <div class="text-center md:py-10 pt-20 font-bold md:text-3xl text-2xl">
+                <div class="text-center md:py-10 pt-20 font-bold md:text-3xl text-2xl text-white">
                     <h1>Daftar PKL Online</h1>
                 </div>
                 <div class="flex flex-col justify-center pt-10 md:pt-0">
                     <button type="button"
                         @click="isOpen = !isOpen; $nextTick(() => { if(isOpen) document.getElementById('form-pendaftaran').scrollIntoView({ behavior: 'smooth' }); })"
-                        class="bg-green-500 px-6 py-2 rounded-md hover:bg-green-700 text-white font-bold tracking-wider"
+                        class="bg-gradient-to-r from-green-900 to-green-400 px-6 py-2 rounded-md hover:scale-110 focus:outline-none focus:ring-2 text-white font-bold tracking-wider"
                         id="user-menu-button" aria-expanded="false" aria-haspopup="true">
                         Daftar Online Sekarang
                     </button>
@@ -262,6 +273,7 @@
                         </div>
                     </form>
                 </div>
+                <div class="py-10"></div>
             </div>
 
             <x-whatsapp-admin></x-whatsapp-admin>

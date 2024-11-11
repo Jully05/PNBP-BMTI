@@ -114,8 +114,8 @@ document.addEventListener("DOMContentLoaded", function() {
     // Menampilkan pop-up saat mengarahkan kursor ke gambar
     smallImages.forEach(function(img) {
         img.addEventListener('mouseover', function() {
-          const newSrc = img.getAttribute('data-src');
-          mainImage.setAttribute('src', newSrc);
+        const newSrc = img.getAttribute('data-src');
+        mainImage.setAttribute('src', newSrc);
     
             // Menempatkan tooltip di atas gambar
             const rect = image.getBoundingClientRect();
