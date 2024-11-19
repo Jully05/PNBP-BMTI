@@ -59,7 +59,7 @@
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M9 3L3 9h2v6h4V11h2v4h4V9h2L9 3z" />
                     </svg>
-                    <h1>PNBP</h1>
+                    <h1>Home</h1>
                 </div>
             </x-nav-link>
             <x-nav-link href="/fasilitas" :active="request()->is('fasilitas')">Layanan Penggunaan Fasilitas

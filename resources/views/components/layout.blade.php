@@ -21,14 +21,20 @@
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
     <script defer src="{{ asset('js/scripts.js') }}"></script>
     <title>{{ $title }}</title>
+</head>
+
+<body class="h-full">
+    <x-navbar></x-navbar>
+    {{ $slot }}
+    <x-footer></x-footer>
     <script>
         window.addEventListener('scroll', function() {
             const navbar = document.getElementById('navbar');
-            if (window.scrollY > 100) { // Ketika scroll lebih dari 50px
+            if (window.scrollY > 50) { // Ketika scroll lebih dari 50px
                 navbar.classList.add(
-                    'bg-gray-800'); // Menambahkan efek blur dan background semi transparan
+                    'bg-gray-800'); // Menambahkan background gray
             } else {
-                navbar.classList.remove('bg-gray-800'); // Menghilangkan efek blur saat kembali ke atas
+                navbar.classList.remove('bg-gray-800'); // Menghilangkan background saat kembali ke atas
             }
         });
         // Fungsi untuk mendeteksi scroll
@@ -41,12 +47,6 @@
             }
         });
     </script>
-</head>
-
-<body class="h-full">
-    <x-navbar></x-navbar>
-    {{ $slot }}
-    <x-footer></x-footer>
 </body>
 
 </html>
