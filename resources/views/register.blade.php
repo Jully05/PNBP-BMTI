@@ -5,15 +5,37 @@
 
     <div class="min-h-full md:px-10 pt-10">
         <main>
-            <div class="flex flex-col md:flex-row justify-center gap-10 md:gap-0">
-                <div class="md:w-[50%] flex flex-col gap-5">
-                    <div class="  md:h-[400px] flex justify-center items-center">
-                        <div class="bg-gray-200 w-[90%] h-[90%] px-4 py-2 shadow-2xl rounded-lg">
+            <div class="flex flex-col md:flex-row justify-center gap-10 md:gap-0 ">
+                <!-- Gambar di sebelah kiri -->
+                <div class="w-full md:w-1/2 px-5 ">
+                    <div id="magang-images" class="flex justify-center py-2 md:py-6">
+                        <div class="w-full h-72 md:h-96 relative">
+                            <img src="img/headerimg6.jpg" alt=""
+                                class="w-full h-full object-cover absolute transition-opacity duration-1000 opacity-100 rounded-lg"
+                                id="image1">
+                            <img src="img/headerimg5.png" alt=""
+                                class="w-full h-full object-cover absolute transition-opacity duration-1000 opacity-0 rounded-lg"
+                                id="image2">
+                            <img src="img/headerimg4.png" alt=""
+                                class="w-full h-full object-cover absolute transition-opacity duration-1000 opacity-0 rounded-lg"
+                                id="image3">
+                            <img src="img/headerimg3.jpeg" alt=""
+                                class="w-full h-full object-cover absolute transition-opacity duration-1000 opacity-0 rounded-lg"
+                                id="image3">
+                            <img src="img/headerimg2.jpg" alt=""
+                                class="w-full h-full object-cover absolute transition-opacity duration-1000 opacity-0 rounded-lg"
+                                id="image3">
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="w-full md:w-1/2 flex flex-col gap-5 ">
+                    <div class="md:h-[400px] flex justify-center items-center">
+                        <div class="bg-gradient-to-r from-blue-400 to-indigo-500 w-[90%] mt-7 h-[96%] px-4 py-2 shadow-2xl rounded-lg">
                             <div class="flex flex-col item-center justify-center text-justify gap-3">
-                                <h1
-                                    class="font-bold tracking-wider text-white text-xl bg-blue-500 rounded-lg text-center md:w-[100%] md:py-2 py-1 md:px-0 px-1">
+                                <h1 class="text-white bg-gradient-to-r mt-3 from-teal-400 to-blue-500 text-center py-3 px-6 rounded-lg shadow-xl font-semibold text-xl md:text-xl">
                                     Layanan Magang (PKL) BBPPMPV BMTI</h1>
-                                <p class="md:text-base text-sm">Selamat datang di program Praktik Kerja Lapangan (PKL) di
+                                <p class="md:text-base text-sm text-white">Selamat datang di program Praktik Kerja Lapangan (PKL) di
                                     Balai
                                     Besar
                                     Pengembangan
@@ -21,127 +43,81 @@
                                     Kami memberikan kesempatan kepada siswa/mahasiswa untuk mendapatkan pengalaman
                                     langsung di dunia kerja melalui program PKL yang dirancang untuk memperkuat
                                     keterampilan dan pengetahuan di bidang teknik industri dan mesin.</p>
-                                <p class="md:text-base text-sm">PKL di BBPPMPV MTI merupakan program magang yang
-                                    ditujukan
-                                    untuk siswa
-                                    SMK, mahasiswa
-                                    D3, dan mahasiswa S1 yang ingin mendalami keahlian mereka dalam bidang teknik mesin,
-                                    elektro, dan teknologi industri. Program ini memungkinkan peserta untuk belajar
-                                    langsung di lingkungan profesional dengan dukungan dari para ahli yang berpengalaman
-                                    di bidangnya.</p>
+                                <p class="md:text-base text-sm text-white">PKL di BBPPMPV MTI adalah program magang
+                                     untuk siswa SMK, mahasiswa D3, dan S1 yang ingin mendalami teknik mesin, elektro, dan teknologi industri. Peserta akan belajar langsung di lingkungan profesional dengan bimbingan ahli berpengalaman.</p>
                             </div>
                         </div>
                     </div>
-                    <div class=" md:h-[400px] flex justify-center items-center">
-                        <div class="w-[90%] h-[90%] shadow-2xl rounded-lg">
-                            <img src="img/background.jpg" class="w-full h-full rounded-lg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="md:w-[50%] md:h-[800px] flex justify-center items-center">
-                    <div class="flex justify-center px-5 md:px-0 ">
-                        <img src="https://bbppmpvbmti.kemdikbud.go.id/main/wp-content/uploads/2024/07/Pelatihan-Praktek-Kerja-Lapangan-819x1024.jpg"
-                            class="md:w-[80%] h-full shadow-2xl rounded-lg" alt="">
-                    </div>
                 </div>
             </div>
 
-            <div class="flex flex-col md:flex-row justify-center mt-10 gap-5 md:gap-0">
-                <div
-                    class="md:w-[50%] md:h-[360px] flex justify-center items-center hover:scale-110 focus:outline-none focus:ring-2">
-                    <div
-                        class="bg-gradient-to-r from-violet-500 to-fuchsia-500 w-[90%] h-full px-4 py-2 shadow-2xl rounded-lg">
+            <div class="flex flex-col md:flex-row justify-center mt-10 gap-5 md:gap-5">
+                <!-- Persyaratan Administrasi -->
+                <div class="md:w-[50%] md:h-[400px] flex justify-center items-center focus:outline-none focus:ring-2">
+                    <div class="bg-gradient-to-r from-blue-600 to-teal-500 w-[90%] h-full px-4 py-6 shadow-2xl rounded-lg">
                         <div class="flex flex-col item-center justify-center text-justify gap-3">
-                            <h1
-                                class="text-blue-900 bg-yellow-500 text-center py-2 md:text-3xl rounded-lg shadow-xl font-bold tracking-wide">
-                                Persyaratan Administrasi</h1>
-                            <ul
-                                class="list-decimal md:mx-5 flex flex-col gap-4 mt-5 md:text-xl text-sm px-5 pb-5 text-white">
-                                <li>
-                                    Terdaftar dalam surat pemanggilan
-                                </li>
-                                <li>
-                                    Membuat proposal sesuai dengan jurusan yang ada disekolah
-                                </li>
-                                <li>
-                                    Mengisi biodata dan menyerahkan pas foto 3x4 sebanyak 2 lembar
-                                </li>
-                                <li>
-                                    Menyerahkan laporan kegiatan selama PKL/ Prakerin / Penelitian Magang
-                                </li>
+                            <h1 class="text-white bg-gradient-to-r from-teal-400 to-blue-500 text-center py-3 px-6 rounded-lg shadow-xl font-semibold text-xl md:text-2xl">
+                                Persyaratan Administrasi
+                            </h1>
+                            <ul class="list-decimal md:mx-5 flex flex-col gap-4 mt-5 text-sm md:text-xl px-5 pb-10 text-white">
+                                <li>Terdaftar dalam surat pemanggilan</li>
+                                <li>Membuat proposal sesuai dengan jurusan yang ada di sekolah</li>
+                                <li>Mengisi biodata dan menyerahkan pas foto 3x4 sebanyak 2 lembar</li>
+                                <li>Menyerahkan laporan kegiatan selama PKL/ Prakerin / Penelitian Magang</li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div
-                    class="md:w-[50%] md:h-[360px] flex justify-center items-center hover:scale-110 focus:outline-none focus:ring-2">
-                    <div
-                        class="bg-gradient-to-r from-violet-500 to-fuchsia-500 w-[90%] h-full px-4 py-2 shadow-2xl rounded-lg">
+            
+                <!-- Sistem, Mekanisme dan Prosedur Pekayaan -->
+                <div class="md:w-[50%] md:h-[400px] flex justify-center items-center focus:outline-none focus:ring-2">
+                    <div class="bg-gradient-to-r from-indigo-600 to-teal-500 w-[90%] h-full px-4 py-6 shadow-2xl rounded-lg">
                         <div class="flex flex-col item-center justify-center text-justify gap-3">
-                            <h1
-                                class="text-blue-900 bg-yellow-500 text-center py-2 md:text-2xl rounded-lg shadow-xl font-bold tracking-wide">
-                                Sistem, Mekanisme dan Prosedur Pekayaan</h1>
-                            <ul
-                                class="list-decimal md:mx-5 flex flex-col gap-4 mt-5 text-sm md:text-xl px-5 pb-5 text-white">
-                                <li>
-                                    Sekolah/Universitas/ Perguruan tinggi mengajukan surat permohonan dan melampirkan
-                                    proposal.
-                                </li>
-                                <li>
-                                    BBPPMV BMTI memproses surat balasan ke pihak pemohon.
-                                </li>
-                                <li>
-                                    siswa memulai kegiatan PKL di BBPPMV BMTI
-                                </li>
-                                <li>
-                                    Surat Keterangan/ sertifikat keluar bila laporan pkl sudah selesai
-                                </li>
+                            <h1 class="text-white bg-gradient-to-r from-teal-400 to-indigo-500 text-center py-3 px-6 rounded-lg shadow-xl font-semibold text-xl">
+                                Sistem, Mekanisme dan Prosedur Pekayaan
+                            </h1>
+                            <ul class="list-decimal md:mx-5 flex flex-col gap-4 mt-5 text-sm md:text-xl px-5 pb-10 text-white">
+                                <li>Sekolah/Universitas/ Perguruan tinggi mengajukan surat permohonan dan melampirkan proposal.</li>
+                                <li>BBPPMV BMTI memproses surat balasan ke pihak pemohon.</li>
+                                <li>Siswa memulai kegiatan PKL di BBPPMV BMTI</li>
+                                <li>Surat Keterangan/ sertifikat keluar bila laporan PKL sudah selesai</li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div class="flex flex-col md:flex-row justify-center md:mt-0 mt-5 md:gap-0 gap-5">
-                <div
-                    class="md:w-[50%] md:h-[400px] flex justify-center items-center hover:scale-110 focus:outline-none focus:ring-2">
-                    <div
-                        class="bg-gradient-to-b from-purple-500 to-pink-500 w-[90%] h-[80%] px-4 py-2 shadow-2xl rounded-lg">
+            
+            <!-- Jangka Waktu Penyelesaian -->
+            <div class="flex flex-col md:flex-row justify-center md:mt-0 mt-5 md:gap-5 gap-5">
+                <div class="md:w-[50%] md:h-[400px] flex justify-center items-center focus:outline-none focus:ring-2">
+                    <div class="bg-gradient-to-r from-indigo-600 to-teal-500 w-[90%] px-4 py-6 shadow-2xl rounded-lg">
                         <div class="flex flex-col item-center justify-center text-justify gap-3">
-                            <h1
-                                class="text-blue-900 bg-yellow-500 text-center py-2 md:text-2xl rounded-lg shadow-xl font-bold tracking-wide">
-                                Jangka Waktu Penyelesaian</h1>
-                            <ul
-                                class="list-disc md:mx-5 flex flex-col gap-4 mt-5 text-sm md:text-xl px-5 pb-5 text-white">
-                                <li>
-                                    5 hari kerja untuk surat jawaban permohonan PKL
-                                </li>
-                                <li>
-                                    7 hari untuk penerbitan sertifikat (bila laporan sudah di terima oleh kepala
-                                    unit tempat peserta magang)
-                                </li>
-                                <li>
-                                    1 bulan untuk penyerahan surat keterangan sertifikat
-                                </li>
+                            <h1 class="text-white bg-gradient-to-r from-teal-400 to-indigo-500 text-center py-3 px-6 rounded-lg shadow-xl font-semibold text-xl">
+                                Jangka Waktu Penyelesaian
+                            </h1>
+                            <ul class="list-disc md:mx-5 flex flex-col gap-4 mt-5 text-sm md:text-xl px-5 pb-5 text-white">
+                                <li>5 hari kerja untuk surat jawaban permohonan PKL</li>
+                                <li>7 hari untuk penerbitan sertifikat (bila laporan sudah diterima oleh kepala unit tempat peserta magang)</li>
+                                <li>1 bulan untuk penyerahan surat keterangan sertifikat</li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div
-                    class="md:w-[50%] md:h-[400px] flex justify-center items-center hover:scale-110 focus:outline-none focus:ring-2">
-                    <div
-                        class="bg-gradient-to-b from-purple-500 to-pink-500 w-[90%] h-[80%] px-4 py-2 shadow-2xl rounded-lg">
-                        <div class="flex flex-col item-center justify-center text-justify md:gap-3">
-                            <h1
-                                class="text-blue-900 bg-yellow-500 text-center py-2 md:text-2xl rounded-lg shadow-xl font-bold tracking-wide">
-                                Produk Layanan</h1>
+            
+                <!-- Produk Layanan -->
+                <div class="md:w-[50%] md:h-[400px] flex justify-center items-center focus:outline-none focus:ring-2">
+                    <div class="bg-gradient-to-r from-indigo-600 to-teal-500 w-[90%] px-4 py-6 shadow-2xl rounded-lg">
+                        <div class="flex flex-col item-center justify-center text-justify gap-3">
+                            <h1 class="text-white bg-gradient-to-r from-teal-400 to-indigo-500 text-center py-3 px-6 rounded-lg shadow-xl font-semibold text-xl">
+                                Produk Layanan
+                            </h1>
                             <div class="text-sm md:text-xl mt-5 flex flex-col gap-2 pb-5 text-white">
                                 <h1>Pelaksanaan PKL/Prakerin</h1>
                                 <h1>Penelitian/Magang</h1>
                             </div>
-                            <h1
-                                class="text-blue-900 bg-yellow-500 text-center py-2 md:text-2xl rounded-lg shadow-xl font-bold tracking-wide">
-                                Biaya</h1>
+                            <h1 class="text-white mt-7 bg-gradient-to-r from-teal-400 to-indigo-500 text-center py-3 px-6 rounded-lg shadow-xl font-semibold text-xl">
+                                Biaya
+                            </h1>
                             <h1 class="text-sm md:text-xl pb-5 pt-3 text-white">Tidak Berbayar ( GRATIS! )</h1>
                         </div>
                     </div>
@@ -155,7 +131,7 @@
                 <div class="flex flex-col justify-center pt-10 md:pt-0">
                     <button type="button"
                         @click="isOpen = !isOpen; $nextTick(() => { if(isOpen) document.getElementById('form-pendaftaran').scrollIntoView({ behavior: 'smooth' }); })"
-                        class="bg-gradient-to-r from-green-900 to-green-400 px-6 py-2 rounded-md hover:scale-110 focus:outline-none focus:ring-2 text-white font-bold tracking-wider"
+                        class="bg-gradient-to-r from-blue-500 to-teal-400  px-6 py-2 rounded-md hover:scale-110 focus:outline-none focus:ring-2 text-white font-bold tracking-wider"
                         id="user-menu-button" aria-expanded="false" aria-haspopup="true">
                         Daftar Online Sekarang
                     </button>
@@ -182,44 +158,44 @@
                         @csrf
                         <div class="md:py-10 md:flex gap-5">
                             <!-- Biodata -->
-                            <div class="p-6 bg-gray-100 rounded-lg shadow-inner mb-6 md:mb-0 md:w-[500px]">
-                                <h2 class="text-2xl font-semibold mb-6 text-center text-purple-600">Biodata Peserta</h2>
+                            <div class="p-6 bg-gradient-to-r from-indigo-600 to-teal-500 rounded-lg shadow-inner mb-6 md:mb-0 md:w-[500px]">
+                                <h2 class="text-2xl font-semibold mb-6 text-center text-white">Biodata Peserta</h2>
                                 <div class="mb-4">
-                                    <label for="name" class="block text-sm font-medium text-gray-700">Nama
+                                    <label for="name" class="block text-sm font-medium text-white">Nama
                                         Lengkap</label>
                                     <input type="text" id="name" name="name" required
                                         class="mt-1 block w-full border border-gray-300 rounded-lg shadow-sm focus:ring-purple-500 focus:border-purple-500 pl-5 py-2 transition-all duration-300 ease-in-out hover:bg-purple-50"
                                         placeholder="Masukkan nama lengkap">
                                 </div>
                                 <div class="mb-4">
-                                    <label for="email" class="block text-sm font-medium text-gray-700">Alamat
+                                    <label for="email" class="block text-sm font-medium text-white">Alamat
                                         Email</label>
                                     <input type="email" id="email" name="email" required
                                         class="mt-1 block w-full border border-gray-300 rounded-lg shadow-sm focus:ring-purple-500 focus:border-purple-500 pl-5 py-2 transition-all duration-300 ease-in-out hover:bg-purple-50"
                                         placeholder="Masukkan email">
                                 </div>
                                 <div class="mb-4">
-                                    <label for="birthplace" class="block text-sm font-medium text-gray-700">Tempat
+                                    <label for="birthplace" class="block text-sm font-medium text-white">Tempat
                                         Lahir</label>
                                     <input type="text" id="birthplace" name="birthplace" required
                                         class="mt-1 block w-full border border-gray-300 rounded-lg shadow-sm focus:ring-purple-500 focus:border-purple-500 pl-5 py-2 transition-all duration-300 ease-in-out hover:bg-purple-50"
                                         placeholder="Masukkan tempat lahir">
                                 </div>
                                 <div class="mb-4">
-                                    <label for="birthdate" class="block text-sm font-medium text-gray-700">Tanggal
+                                    <label for="birthdate" class="block text-sm font-medium text-white">Tanggal
                                         Lahir</label>
                                     <input type="date" id="birthdate" name="birthdate" required
-                                        class="mt-1 block w-full border border-gray-300 rounded-lg shadow-sm focus:ring-purple-500 focus:border-purple-500 pl-5 py-2 transition-all duration-300 ease-in-out hover:bg-purple-50">
+                                        class="mt-1 block w-full border border-gray-300 rounded-lg shadow-sm focus:ring-purple-500 text-gray-400 focus:border-purple-500 pl-5 py-2 transition-all duration-300 ease-in-out hover:bg-purple-50">
                                 </div>
                                 <div class="mb-4">
                                     <label for="address"
-                                        class="block text-sm font-medium text-gray-700">Alamat</label>
+                                        class="block text-sm font-medium text-white">Alamat</label>
                                     <textarea id="address" name="address" required
                                         class="mt-1 block w-full border border-gray-300 rounded-lg shadow-sm focus:ring-purple-500 focus:border-purple-500 pl-5 py-2 transition-all duration-300 ease-in-out hover:bg-purple-50"
                                         placeholder="Masukkan alamat lengkap"></textarea>
                                 </div>
                                 <div class="mb-4">
-                                    <label for="phone" class="block text-sm font-medium text-gray-700">Nomor
+                                    <label for="phone" class="block text-sm font-medium text-white">Nomor
                                         HP</label>
                                     <input type="text" id="phone" name="phone" required
                                         class="mt-1 block w-full border border-gray-300 rounded-lg shadow-sm focus:ring-purple-500 focus:border-purple-500 pl-5 py-2 transition-all duration-300 ease-in-out hover:bg-purple-50"
@@ -228,38 +204,38 @@
                             </div>
 
                             <!-- Informasi Pendidikan -->
-                            <div class="p-6 bg-gray-100 rounded-lg shadow-inner mb-6 md:mb-0 md:w-[500px]">
-                                <h3 class="text-2xl font-semibold mb-6 text-center text-yellow-600">Informasi
+                            <div class="p-6 bg-gradient-to-r from-teal-500 to-indigo-600 rounded-lg shadow-inner mb-6 md:mb-0 md:w-[500px]">
+                                <h3 class="text-2xl font-semibold mb-6 text-center text-white">Informasi
                                     Pendidikan</h3>
                                 <div class="mb-4">
                                     <label for="education_level"
-                                        class="block text-sm font-medium text-gray-700">Jenjang
+                                        class="block text-sm font-medium text-white">Jenjang
                                         Pendidikan</label>
                                     <input type="text" id="education_level" name="education_level" required
                                         class="mt-1 block w-full border border-gray-300 rounded-lg shadow-sm focus:ring-yellow-500 focus:border-yellow-500 pl-5 py-2 transition-all duration-300 ease-in-out hover:bg-yellow-50"
                                         placeholder="Masukkan jenjang pendidikan">
                                 </div>
                                 <div class="mb-4">
-                                    <label for="institution" class="block text-sm font-medium text-gray-700">Lembaga
+                                    <label for="institution" class="block text-sm font-medium text-white">Lembaga
                                         Pendidikan</label>
                                     <input type="text" id="institution" name="institution" required
                                         class="mt-1 block w-full border border-gray-300 rounded-lg shadow-sm focus:ring-yellow-500 focus:border-yellow-500 pl-5 py-2 transition-all duration-300 ease-in-out hover:bg-yellow-50"
                                         placeholder="Masukkan lembaga pendidikan">
                                 </div>
                                 <div class="mb-4">
-                                    <label for="major" class="block text-sm font-medium text-gray-700">Fakultas /
+                                    <label for="major" class="block text-sm font-medium text-white">Fakultas /
                                         Jurusan</label>
                                     <input type="text" id="major" name="major" required
                                         class="mt-1 block w-full border border-gray-300 rounded-lg shadow-sm focus:ring-yellow-500 focus:border-yellow-500 pl-5 py-2 transition-all duration-300 ease-in-out hover:bg-yellow-50"
                                         placeholder="Masukkan fakultas / jurusan">
                                 </div>
                                 <div class="mb-4">
-                                    <label for="upload_letter" class="block text-sm font-medium text-gray-700">Upload
+                                    <label for="upload_letter" class="block text-sm font-medium text-white">Upload
                                         Surat dari
                                         Sekolah/Kampus</label>
                                     <input type="file" id="upload_letter" name="upload_letter"
                                         accept=".pdf,.doc,.docx,.jpg,.jpeg,.png" required
-                                        class="mt-1 block w-full border border-gray-300 rounded-lg shadow-sm focus:ring-yellow-500 focus:border-yellow-500 pl-5 py-2 transition-all duration-300 ease-in-out hover:bg-yellow-50">
+                                        class="mt-1 block w-full border text-gray-200 border-gray-300 rounded-lg shadow-sm focus:ring-yellow-500 focus:border-yellow-500 pl-5 py-2 transition-all duration-300 ease-in-out hover:bg-yellow-50">
                                 </div>
                             </div>
                         </div>
@@ -267,7 +243,7 @@
                         <!-- Tombol Daftar -->
                         <div class="text-center">
                             <button type="submit"
-                                class="w-1/3 bg-gradient-to-r from-green-900 to-green-400 text-white py-2 rounded-xl shadow-lg hover:scale-110 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 mx-auto transition-transform duration-300">
+                                class="w-1/3 bg-gradient-to-r font-bold from-blue-500 to-teal-400  text-white py-2 rounded-xl shadow-lg hover:scale-110 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 mx-auto transition-transform duration-300">
                                 Daftar
                             </button>
                         </div>
@@ -279,4 +255,112 @@
             <x-whatsapp-admin></x-whatsapp-admin>
         </main>
     </div>
+    <script>
+        function startImageSlider(imageContainerSelector) {
+            let currentImageIndex = 0;
+            const images = document.querySelectorAll(imageContainerSelector + " .w-full.h-full.object-cover");
+
+            function showNextImage() {
+                images[currentImageIndex].classList.remove("opacity-100");
+                images[currentImageIndex].classList.add("opacity-0");
+
+                currentImageIndex = (currentImageIndex + 1) % images.length;
+
+                images[currentImageIndex].classList.remove("opacity-0");
+                images[currentImageIndex].classList.add("opacity-100");
+            }
+
+            setInterval(showNextImage, 4000); // Ganti gambar setiap 4 detik
+        }
+
+        // Initialize sliders for both sections
+        startImageSlider('#magang-images');
+        startImageSlider('#kunjungan-images');
+
+
+
+        const btnPublic = document.getElementById('btn-public');
+        const btnNonPublic = document.getElementById('btn-non-public');
+        const publicRow = document.getElementById('public-row');
+        const nonPublicRow = document.getElementById('non-public-row');
+
+        // Menampilkan "Public" dan menyembunyikan "Non Public" pada awal
+        publicRow.style.display = 'block';
+        nonPublicRow.style.display = 'none';
+
+        // Event listener untuk tombol Public
+        btnPublic.addEventListener('click', function(event) {
+            event.preventDefault();
+            publicRow.style.display = 'block';
+            nonPublicRow.style.display = 'none';
+
+            // Tambahkan kelas aktif ke tombol Public, hilangkan dari Non Public
+            btnPublic.classList.add('bg-blue-500', 'text-white');
+            btnNonPublic.classList.remove('bg-blue-500', 'text-white');
+            btnNonPublic.classList.add('bg-gray-300', 'text-black');
+
+            // Panggil checkScrollButtons untuk Public setelah berganti
+            checkScrollButtons(containerPublic, scrollLeftBtnPublic, scrollRightBtnPublic);
+        });
+
+        // Event listener untuk tombol Non Public
+        btnNonPublic.addEventListener('click', function(event) {
+            event.preventDefault();
+            publicRow.style.display = 'none';
+            nonPublicRow.style.display = 'block';
+
+            // Tambahkan kelas aktif ke tombol Non Public, hilangkan dari Public
+            btnNonPublic.classList.add('bg-blue-500', 'text-white');
+            btnPublic.classList.remove('bg-blue-500', 'text-white');
+            btnPublic.classList.add('bg-gray-300', 'text-black');
+
+            // Panggil checkScrollButtons untuk Non Public setelah berganti
+            checkScrollButtons(containerNonPublic, scrollLeftBtnNonPublic, scrollRightBtnNonPublic);
+        });
+
+        // Mendapatkan elemen container dan tombol geser untuk Public
+        const containerPublic = document.getElementById('building-container');
+        const scrollLeftBtnPublic = document.getElementById('scroll-left');
+        const scrollRightBtnPublic = document.getElementById('scroll-right');
+
+        // Mendapatkan elemen container dan tombol geser untuk Non Public
+        const containerNonPublic = document.getElementById('building-container-non-public');
+        const scrollLeftBtnNonPublic = document.getElementById('scroll-left-non-public');
+        const scrollRightBtnNonPublic = document.getElementById('scroll-right-non-public');
+
+        // Fungsi untuk menggeser container ke kanan atau kiri
+        function scrollContainer(container, direction) {
+            container.scrollBy({
+                left: direction * 300, // Menggeser 300px setiap kali tombol ditekan
+                behavior: 'smooth'
+            });
+        }
+
+        // Event listener untuk tombol geser Public
+        scrollLeftBtnPublic.addEventListener('click', () => scrollContainer(containerPublic, -1));
+        scrollRightBtnPublic.addEventListener('click', () => scrollContainer(containerPublic, 1));
+
+        // Event listener untuk tombol geser Non Public
+        scrollLeftBtnNonPublic.addEventListener('click', () => scrollContainer(containerNonPublic, -1));
+        scrollRightBtnNonPublic.addEventListener('click', () => scrollContainer(containerNonPublic, 1));
+
+        // Fungsi untuk menampilkan atau menyembunyikan tombol geser
+        function checkScrollButtons(container, scrollLeftBtn, scrollRightBtn) {
+            const maxScrollLeft = container.scrollWidth - container.clientWidth;
+            scrollLeftBtn.style.display = container.scrollLeft > 0 ? 'block' : 'none';
+            scrollRightBtn.style.display = container.scrollLeft < maxScrollLeft ? 'block' : 'none';
+        }
+
+        // Event untuk menampilkan/menghilangkan tombol ketika scrolling
+        containerPublic.addEventListener('scroll', () => checkScrollButtons(containerPublic, scrollLeftBtnPublic,
+            scrollRightBtnPublic));
+        containerNonPublic.addEventListener('scroll', () => checkScrollButtons(containerNonPublic, scrollLeftBtnNonPublic,
+            scrollRightBtnNonPublic));
+
+        // Periksa saat halaman dimuat untuk Public dan Non Public
+        window.addEventListener('load', () => {
+            checkScrollButtons(containerPublic, scrollLeftBtnPublic, scrollRightBtnPublic);
+            checkScrollButtons(containerNonPublic, scrollLeftBtnNonPublic, scrollRightBtnNonPublic);
+        });
+    </script>
 </x-layout>
