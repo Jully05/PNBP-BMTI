@@ -18,12 +18,12 @@ Route::get('/register', function () {
     return view('register', ['title' => 'Layanan Magang']);
 });
 
+// Route untuk pendaftaran kunjungan industri
 Route::get('/kunjin', function () {
     return view('kunjin', ['title' => 'Layanan Kunjungan Industri']);
 });
 
 Route::get('/buildings/{id}', [BuildingController::class, 'show'])->name('buildings.show');
-
 Route::resource('admin/buildings', BuildingAdminController::class);
 Route::post('/register', [RegistrationController::class, 'store'])->name('register.store');
 Route::post('/kunjin', [KunjinController::class, 'store'])->name('kunjin.store');
