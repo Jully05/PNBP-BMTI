@@ -182,7 +182,7 @@
             </div>
         </section>      
     </main>
-
+    
     <footer class="from-blue-900 to-blue-500 text white h-[250px] md:h-[180px] ">
         <div class="flex flex-col md:flex-row text-center justify-center md:gap-12 gap-1 w-300px">
             <a href="" class="hover:text-blue-500 md:text-sm text-xs font-semibold leading-6 ">Privacy</a>
