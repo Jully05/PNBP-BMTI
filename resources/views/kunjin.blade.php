@@ -35,14 +35,16 @@
   </div>
 <body class="bg-gradient-to-br from-blue-900 to-blue-500 text-gray-100">
 
-    <main class="pt-24 container mx-auto" x-data="{ isOpen: false }">
+    <main class="pt-24 mx-auto" x-data="{ isOpen: false }">
         <!-- Hero Section -->
         <section class="relative text-center py-20 bg-gradient-to-b from-blue-900 to-transparent rounded-lg shadow-2xl">
             <div class="absolute inset-0">
                 <img src="/img/background.jpg" alt="" class="w-full h-full object-cover opacity-30">
             </div>
-            <h2 class="text-5xl font-extrabold mb-6 relative z-10 animate-fade-in text-white">Kunjungan Study Tour di BBPPMV BMTI</h2>
-            <p class="text-xl mb-8 relative z-10 opacity-90 text-white">BBPPMB BMTI menerima kunjungan studi dari sekolah dan kampus untuk memberikan edukasi tentang tugas BBPPMB BMTI, termasuk pengelolaan pendidikan vokasi dan pengembangan kompetensi. Kunjungan ini gratis dan bertujuan meningkatkan wawasan tentang peran BBPPMB BMTI dalam peningkatan kualitas pendidikan di Indonesia.</p>
+            <div class="px-40">
+                <h2 class="text-5xl font-extrabold mb-6 relative z-10 animate-fade-in text-white">Kunjungan Study Tour di BBPPMV BMTI</h2>
+                <p class="text-xl mb-8 relative z-10 opacity-90 text-white">BBPPMB BMTI menerima kunjungan studi dari sekolah dan kampus untuk memberikan edukasi tentang tugas BBPPMB BMTI, termasuk pengelolaan pendidikan vokasi dan pengembangan kompetensi. Kunjungan ini gratis dan bertujuan meningkatkan wawasan tentang peran BBPPMB BMTI dalam peningkatan kualitas pendidikan di Indonesia.</p>
+            </div>
             <button type="button" @click="isOpen = !isOpen; $nextTick(() => { if(isOpen) document.getElementById('form-pendaftaran').scrollIntoView({ behavior: 'smooth' }); })" class="inline-block px-8 py-3 bg-white text-blue-900 font-bold rounded-full shadow-md hover:bg-gray-200 transition-transform transform hover:scale-105 relative z-10">Daftar Sekarang</button>
         </section>
 
@@ -101,7 +103,7 @@
 
         
         <!-- Layanan Section -->
-        <section id="layanan" class="p-8 my-12">
+        <section id="layanan" class="p-8 my-12 px-40">
             <h3 class="text-3xl font-extrabold text-center mb-6 ">Layanan Kami</h3>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <!-- Kolom Kiri -->
@@ -170,16 +172,17 @@
         </section>
 
         <!-- Galeri Section -->
-        <section class="p-8 mx-4 rounded-lg shadow-lg my-12 bg-white bg-sky-500 text-blue-900 animate-slide-up">
+        <section class="p-8 mx-4 rounded-lg shadow-lg my-12 bg-white text-blue-900 animate-slide-up">
             <h3 class="text-3xl font-extrabold text-center mb-6">Galeri Kegiatan</h3>
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 max-w-full">
                 <img src="https://via.placeholder.com/300" class="rounded-lg shadow-md transform hover:scale-105 transition duration-300" alt="Foto Kegiatan 1">
                 <img src="https://via.placeholder.com/300" class="rounded-lg shadow-md transform hover:scale-105 transition duration-300" alt="Foto Kegiatan 2">
+                <img src="https://via.placeholder.com/300" class="rounded-lg shadow-md transform hover:scale-105 transition duration-300" alt="Foto Kegiatan 3">
                 <img src="https://via.placeholder.com/300" class="rounded-lg shadow-md transform hover:scale-105 transition duration-300" alt="Foto Kegiatan 3">
             </div>
         </section>      
     </main>
-    
+
     <footer class="from-blue-900 to-blue-500 text white h-[250px] md:h-[180px] ">
         <div class="flex flex-col md:flex-row text-center justify-center md:gap-12 gap-1 w-300px">
             <a href="" class="hover:text-blue-500 md:text-sm text-xs font-semibold leading-6 ">Privacy</a>
