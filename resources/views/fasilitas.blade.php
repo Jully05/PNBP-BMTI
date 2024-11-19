@@ -37,7 +37,7 @@
                     {{-- Alur 1 --}}
                     <div
                         class="bg-white p-[5px] border-2 hover:shadow-xl border-gray rounded-xl w-full max-w-[350px] mx-auto md:mx-0">
-                        <div class="ml-6 mt-3"><img src="img/gedung.png" alt="" class="w-10 h-10"></div>
+                        <div class="ml-6 mt-3"><img src="img/build.png" alt="" class="w-10 h-10"></div>
                         <h1
                             class="rounded flex justify-center items-center text-2xl bg-blue-500 py-2 mt-2 text-white font-bold">
                             1
@@ -50,7 +50,7 @@
                     {{-- Alur 2 --}}
                     <div
                         class="bg-white p-[5px] border-2 hover:shadow-xl border-gray rounded-xl w-full max-w-[350px] mx-auto md:mx-0">
-                        <div class="ml-6 mt-3"><img src="img/calender.png" alt="" class="w-10 h-10"></div>
+                        <div class="ml-6 mt-3"><img src="img/kalender.png" alt="" class="w-10 h-10"></div>
                         <h1
                             class="rounded flex justify-center items-center text-2xl bg-blue-500 py-2 mt-2 text-white font-bold">
                             2
@@ -63,7 +63,7 @@
                     {{-- Alur 3 --}}
                     <div
                         class="bg-white p-[5px] border-2 hover:shadow-xl border-gray rounded-xl w-full max-w-[350px] mx-auto md:mx-0">
-                        <div class="ml-6 mt-3"><img src="img/whatsapp.png" alt="" class="w-10 h-10"></div>
+                        <div class="ml-6 mt-3"><img src="img/wa.png" alt="" class="w-10 h-10"></div>
                         <h1
                             class="rounded flex justify-center items-center text-2xl bg-blue-500 py-2 mt-2 text-white font-bold">
                             3
