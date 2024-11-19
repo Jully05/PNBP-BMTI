@@ -41,11 +41,19 @@
             <div class="absolute inset-0">
                 <img src="/img/background.jpg" alt="" class="w-full h-full object-cover opacity-30">
             </div>
-            <div class="px-40">
-                <h2 class="text-5xl font-extrabold mb-6 relative z-10 animate-fade-in text-white">Kunjungan Study Tour di BBPPMV BMTI</h2>
-                <p class="text-xl mb-8 relative z-10 opacity-90 text-white">BBPPMB BMTI menerima kunjungan studi dari sekolah dan kampus untuk memberikan edukasi tentang tugas BBPPMB BMTI, termasuk pengelolaan pendidikan vokasi dan pengembangan kompetensi. Kunjungan ini gratis dan bertujuan meningkatkan wawasan tentang peran BBPPMB BMTI dalam peningkatan kualitas pendidikan di Indonesia.</p>
+            <div class="px-6 md:px-20 lg:px-40">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-6 relative z-10 animate-fade-in text-white">
+                    Kunjungan Study Tour di BBPPMV BMTI
+                </h2>
+                <p class="text-sm md:text-lg lg:text-xl mb-8 relative z-10 opacity-90 text-white">
+                    BBPPMB BMTI menerima kunjungan studi dari sekolah dan kampus untuk memberikan edukasi tentang tugas BBPPMB BMTI, termasuk pengelolaan pendidikan vokasi dan pengembangan kompetensi. Kunjungan ini gratis dan bertujuan meningkatkan wawasan tentang peran BBPPMB BMTI dalam peningkatan kualitas pendidikan di Indonesia.
+                </p>
             </div>
-            <button type="button" @click="isOpen = !isOpen; $nextTick(() => { if(isOpen) document.getElementById('form-pendaftaran').scrollIntoView({ behavior: 'smooth' }); })" class="inline-block px-8 py-3 bg-white text-blue-900 font-bold rounded-full shadow-md hover:bg-gray-200 transition-transform transform hover:scale-105 relative z-10">Daftar Sekarang</button>
+            <button type="button"
+                @click="isOpen = !isOpen; $nextTick(() => { if(isOpen) document.getElementById('form-pendaftaran').scrollIntoView({ behavior: 'smooth' }); })"
+                class="inline-block px-6 md:px-8 py-3 bg-white text-blue-900 font-bold rounded-full shadow-md hover:bg-gray-200 transition-transform transform hover:scale-105 relative z-10">
+                Daftar Sekarang
+            </button>
         </section>
 
         <!-- Form Pendaftaran -->
@@ -103,9 +111,9 @@
 
         
         <!-- Layanan Section -->
-        <section id="layanan" class="p-8 my-12 px-40">
-            <h3 class="text-3xl font-extrabold text-center mb-6 ">Layanan Kami</h3>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <section id="layanan" class="p-8 my-12 lg:px-40">
+            <h3 class="text-3xl font-extrabold text-center mb-6">Layanan Kami</h3>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 <!-- Kolom Kiri -->
                 <div class="space-y-6">
                     <div class="bg-gradient-to-r from-purple-400 to-blue-400 rounded-3xl p-6 shadow-md transition-transform transform hover:scale-105 hover:shadow-lg">
