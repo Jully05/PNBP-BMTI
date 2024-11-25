@@ -41,8 +41,7 @@
                 </h1>
                 <div class="md:pt-[70px] pt-5 flex flex-col md:flex-row gap-5">
                     {{-- Alur 1 --}}
-                    <div
-                        class="bg-white md:h-56 p-[5px] border-2 hover:shadow-xl border-gray rounded-xl w-full max-w-[350px] mx-auto md:mx-0">
+                    <div class="bg-white md:h-56 p-[5px] border-2 hover:shadow-xl border-gray rounded-xl w-full max-w-[350px] mx-auto md:mx-0">
                         <div class="pl-2 md:pt-2 flex md:flex-col md:items-start  items-center">
                             <svg class="w-10 h-10 mr-3 rtl:rotate-[270deg]" aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
@@ -59,12 +58,12 @@
                         <h2 class="flex justify-center py-3 px-2 text-justify h-[80px] md:text-sm text-xs">Pilihl gedung
                             untuk
                             melihat detail gedung yang
+>>>>>>> efa2eba8071f8e105c7017953fb5ae6553e72d1a
                             sesuai
                             dengan kebutuhan Anda.</h2>
                     </div>
                     {{-- Alur 2 --}}
-                    <div
-                        class="bg-white md:h-56 p-[5px] border-2 hover:shadow-xl border-gray rounded-xl w-full max-w-[350px] mx-auto md:mx-0">
+                    <div class="bg-white md:h-56 p-[5px] border-2 hover:shadow-xl border-gray rounded-xl w-full max-w-[350px] mx-auto md:mx-0">
                         <div class="pl-2 md:pt-2 flex md:flex-col md:items-start items-center">
                             <svg class="w-10 h-10 mr-3 rtl:rotate-[270deg]" aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
@@ -106,6 +105,7 @@
                             class="flex justify-center py-3 px-2 text-justify h-[80px] md:text-sm text-xs">Setelah
                             menentukan
                             tanggal berapa anda ingin gunakan gedung tersebut,
+>>>>>>> efa2eba8071f8e105c7017953fb5ae6553e72d1a
                             lanjutkan dengan menghubungi kami melalui chat WhatsApp untuk pemesanan dan informasi lebih
                             lanjut.
                         </h2>

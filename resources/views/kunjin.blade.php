@@ -35,18 +35,27 @@
   </div>
 <body class="bg-gradient-to-br from-blue-900 to-blue-500 text-gray-100">
 
-    <main class="pt-24 container mx-auto" x-data="{ isOpen: false }">
+    <main class="pt-24 mx-auto" x-data="{ isOpen: false }">
         <!-- Hero Section -->
         <section class="relative text-center py-20 bg-gradient-to-b from-blue-900 to-transparent rounded-lg shadow-2xl">
             <div class="absolute inset-0">
                 <img src="/img/background.jpg" alt="" class="w-full h-full object-cover opacity-30">
             </div>
-            <h2 class="text-5xl font-extrabold mb-6 relative z-10 animate-fade-in text-white">Kunjungan Study Tour di BBPPMV BMTI</h2>
-            <p class="text-xl mb-8 relative z-10 opacity-90 text-white">BBPPMB BMTI menerima kunjungan studi dari sekolah dan kampus untuk memberikan edukasi tentang tugas BBPPMB BMTI, termasuk pengelolaan pendidikan vokasi dan pengembangan kompetensi. Kunjungan ini gratis dan bertujuan meningkatkan wawasan tentang peran BBPPMB BMTI dalam peningkatan kualitas pendidikan di Indonesia.</p>
-            <button type="button" @click="isOpen = !isOpen; $nextTick(() => { if(isOpen) document.getElementById('form-pendaftaran').scrollIntoView({ behavior: 'smooth' }); })" class="inline-block px-8 py-3 bg-white text-blue-900 font-bold rounded-full shadow-md hover:bg-gray-200 transition-transform transform hover:scale-105 relative z-10">Daftar Sekarang</button>
+            <div class="px-6 md:px-20 lg:px-40">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-6 relative z-10 animate-fade-in text-white">
+                    Kunjungan Study Tour di BBPPMV BMTI
+                </h2>
+                <p class="text-sm md:text-lg lg:text-xl mb-8 relative z-10 opacity-90 text-white">
+                    BBPPMB BMTI menerima kunjungan studi dari sekolah dan kampus untuk memberikan edukasi tentang tugas BBPPMB BMTI, termasuk pengelolaan pendidikan vokasi dan pengembangan kompetensi. Kunjungan ini gratis dan bertujuan meningkatkan wawasan tentang peran BBPPMB BMTI dalam peningkatan kualitas pendidikan di Indonesia.
+                </p>
+            </div>
+            <button type="button"
+                @click="isOpen = !isOpen; $nextTick(() => { if(isOpen) document.getElementById('form-pendaftaran').scrollIntoView({ behavior: 'smooth' }); })"
+                class="inline-block px-6 md:px-8 py-3 bg-white text-blue-900 font-bold rounded-full shadow-md hover:bg-gray-200 transition-transform transform hover:scale-105 relative z-10">
+                Daftar Sekarang
+            </button>
         </section>
 
-        <!-- Form Pendaftaran -->
         <!-- Form Pendaftaran -->
 <section id="form-pendaftaran" class="mt-10" x-show="isOpen">
     <h3 class="text-4xl font-extrabold text-center  mb-8 animate-bounce">
@@ -102,13 +111,15 @@
 
         
         <!-- Layanan Section -->
-        <section id="layanan" class="p-8 my-12">
-            <h3 class="text-3xl font-extrabold text-center mb-6 ">Layanan Kami</h3>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <section id="layanan" class="p-8 my-12 lg:px-40">
+            <h3 class="text-3xl font-extrabold text-center mb-6">Layanan Kami</h3>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 <!-- Kolom Kiri -->
                 <div class="space-y-6">
                     <div class="bg-gradient-to-r from-purple-400 to-blue-400 rounded-3xl p-6 shadow-md transition-transform transform hover:scale-105 hover:shadow-lg">
-                        <h4 class="text-xl font-bold text-white mb-2">Persyaratan Administrasi</h4>
+                        <div class="bg-gradient-to-r from-purple-600 to-blue-600 rounded-lg p-2 mb-4">
+                            <h4 class="text-xl font-bold text-white">Persyaratan Administrasi</h4>
+                        </div>
                         <p class="mb-2 text-white">Untuk melakukan kunjungan, berikut adalah persyaratannya:</p>
                         <ol class="list-decimal list-inside text-white">
                             <li>Surat Permohonan Kunjungan</li>
@@ -117,7 +128,9 @@
                     </div>
 
                     <div class="bg-gradient-to-r from-green-400 to-teal-500 rounded-3xl p-6 shadow-md transition-transform transform hover:scale-105 hover:shadow-lg">
-                        <h4 class="text-xl font-bold text-white mb-2">Prosedur Layanan</h4>
+                        <div class="bg-gradient-to-r from-green-600 to-teal-600 rounded-lg p-2 mb-4">
+                            <h4 class="text-xl font-bold text-white">Prosedur Layanan</h4>
+                        </div>
                         <p class="mb-2 text-white">Berikut adalah prosedur untuk melakukan kunjungan:</p>
                         <ol class="list-decimal list-inside text-white">
                             <li>Instansi mengajukan surat permohonan kunjungan.</li>
@@ -128,7 +141,7 @@
                     </div>
 
                     <div class="bg-gradient-to-r from-red-400 to-pink-500 rounded-3xl p-6 shadow-md transition-transform transform hover:scale-105 hover:shadow-lg">
-                        <h4 class="text-xl font-bold text-white mb-2">Biaya</h4>
+                        <h4 class="bg-gradient-to-r font-bold from-red-600 to-pink-600 rounded-lg p-2 mb-4">Biaya</h4>
                         <p class="mb-2 text-white">Biaya untuk kunjungan:</p>
                         <ul class="list-disc list-inside text-white">
                             <li>Tidak berbayar atau GRATIS.</li>
@@ -139,7 +152,7 @@
                 <!-- Kolom Kanan -->
                 <div class="space-y-6">
                     <div class="bg-gradient-to-r from-yellow-400 to-orange-500 rounded-3xl p-6 shadow-md transition-transform transform hover:scale-105 hover:shadow-lg">
-                        <h4 class="text-xl font-bold text-white mb-2">Produk Layanan</h4>
+                        <h4 class="bg-gradient-to-r font-bold from-yellow-600 to-orange-600 rounded-lg p-2 mb-4">Produk Layanan</h4>
                         <p class="mb-2 text-white">Kami menawarkan berbagai produk layanan termasuk:</p>
                         <ul class="list-disc list-inside text-white">
                             <li>Program Keahlian Teknik Mesin</li>
@@ -155,7 +168,7 @@
                     </div>
 
                     <div class="bg-gradient-to-r from-indigo-400 to-blue-600 rounded-3xl p-6 shadow-md transition-transform transform hover:scale-105 hover:shadow-lg">
-                        <h4 class="text-xl font-bold text-white mb-2">Jangka Waktu Pelayanan</h4>
+                        <h4 class="bg-gradient-to-r font-bold from-indigo-600 to-blue-600 rounded-lg p-2 mb-4">Jangka Waktu Pelayanan</h4>
                         <p class="mb-2 text-white">Berikut adalah jangka waktu untuk layanan kami:</p>
                         <ul class="list-disc list-inside text-white">
                             <li>Jangka waktu penyelesaian surat permohonan kunjungan adalah 7 hari kerja.</li>
@@ -167,15 +180,17 @@
         </section>
 
         <!-- Galeri Section -->
-        <section class="p-8 rounded-lg shadow-lg my-12 bg-white bg-sky-500 text-blue-900 animate-slide-up">
+        <section class="p-8 mx-4 rounded-lg shadow-lg my-12 bg-white text-blue-900 animate-slide-up">
             <h3 class="text-3xl font-extrabold text-center mb-6">Galeri Kegiatan</h3>
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 max-w-full">
                 <img src="https://via.placeholder.com/300" class="rounded-lg shadow-md transform hover:scale-105 transition duration-300" alt="Foto Kegiatan 1">
                 <img src="https://via.placeholder.com/300" class="rounded-lg shadow-md transform hover:scale-105 transition duration-300" alt="Foto Kegiatan 2">
                 <img src="https://via.placeholder.com/300" class="rounded-lg shadow-md transform hover:scale-105 transition duration-300" alt="Foto Kegiatan 3">
+                <img src="https://via.placeholder.com/300" class="rounded-lg shadow-md transform hover:scale-105 transition duration-300" alt="Foto Kegiatan 3">
             </div>
-        </section>
+        </section>      
     </main>
+
     <footer class="from-blue-900 to-blue-500 text white h-[250px] md:h-[180px] ">
         <div class="flex flex-col md:flex-row text-center justify-center md:gap-12 gap-1 w-300px">
             <a href="" class="hover:text-blue-500 md:text-sm text-xs font-semibold leading-6 ">Privacy</a>
