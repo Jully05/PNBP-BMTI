@@ -19,28 +19,28 @@
                 </div>
 
                 <div id="magang-images" class="flex justify-center md:py-6 py-2">
-                    <div class="md:w-4/5 w-[90%] md:h-80 h-52 relative">
+                    <div class="md:w-4/5 w-[90%] md:h-80 h-40 relative">
                         <img src="img/headerimg6.jpg" alt=""
-                            class="w-full h-full object-cover absolute transition-opacity duration-1000 opacity-100"
+                            class="w-full h-full rounded-md object-cover absolute transition-opacity duration-1000 opacity-100"
                             id="image1">
                         <img src="img/headerimg5.png" alt=""
-                            class="w-full h-full object-cover absolute transition-opacity duration-1000 opacity-0"
+                            class="w-full h-full rounded-md object-cover absolute transition-opacity duration-1000 opacity-0"
                             id="image2">
                         <img src="img/headerimg4.png" alt=""
-                            class="w-full h-full object-cover absolute transition-opacity duration-1000 opacity-0"
+                            class="w-full h-full rounded-md object-cover absolute transition-opacity duration-1000 opacity-0"
                             id="image3">
                         <img src="img/headerimg3.jpeg" alt=""
-                            class="w-full h-full object-cover absolute transition-opacity duration-1000 opacity-0"
+                            class="w-full h-full rounded-md object-cover absolute transition-opacity duration-1000 opacity-0"
                             id="image3">
                         <img src="img/headerimg2.jpg" alt=""
-                            class="w-full h-full object-cover absolute transition-opacity duration-1000 opacity-0"
+                            class="w-full h-full rounded-md object-cover absolute transition-opacity duration-1000 opacity-0"
                             id="image3">
                     </div>
                 </div>
             </div>
 
             {{-- fasilitas --}}
-            <div class="py-10">
+            <div class="md:py-10 pt-10">
                 <div class="flex justify-between items-center md:px-40 px-5">
                     <h1 class="md:text-3xl text-lg font-bold tracking-wide">
                         Daftar Sewa Gedung
@@ -67,14 +67,14 @@
                                 @foreach ($buildings as $building)
                                     <a href="{{ route('buildings.show', $building->id) }}">
                                         <div
-                                            class="max-w-xs md:max-w-xs w-64 md:w-64 rounded-md md:h-auto md:shadow-lg bg-white flex-shrink-0">
+                                            class="max-w-xs md:max-w-xs w-52 md:w-64 rounded-md md:h-auto md:shadow-lg bg-white flex-shrink-0">
                                             <img class="md:w-full md:h-40 h-36 object-cover md:rounded-none rounded-md"
                                                 src="{{ asset($building->image) }}" alt="Nama Gedung">
-                                            <div class="md:px-4 px-1 py-1">
+                                            <div class="md:px-2 px-1 py-1">
                                                 <div class="font-bold md:text-lg mb-1">{{ $building->name }}</div>
                                             </div>
-                                            <div class="flex justify-between items-center">
-                                                <span class="text-gray-700 text-sm">Rp
+                                            <div class="flex justify-between items-center pb-5">
+                                                <span class="text-gray-700 px-1 md:px-2 text-sm">Rp
                                                     {{ number_format($building->price) }}
                                                     / hari</span>
                                             </div>
@@ -108,7 +108,7 @@
                                 @foreach ($buildings as $building)
                                     <a href="{{ route('buildings.show', $building->id) }}">
                                         <div
-                                            class="max-w-xs md:max-w-xs w-64 md:w-64 rounded-md md:h-auto md:shadow-lg bg-white flex-shrink-0">
+                                            class="max-w-xs md:max-w-xs w-52 md:w-64 rounded-md md:h-auto md:shadow-lg bg-white flex-shrink-0">
                                             <img class="md:w-full md:h-40 h-36 object-cover md:rounded-none rounded-md"
                                                 src="{{ asset($building->image) }}" alt="Nama Gedung">
                                             <div class="md:px-4 px-1 py-1">
@@ -135,28 +135,28 @@
                     <h1 class="md:text-3xl text-lg font-bold tracking-wide md:pb-0 pb-2">
                         Kunjungan Industri di BMTI
                     </h1>
-                    <a href="/kunjungan-industri"
+                    <a href="/kunjin"
                         class="text-blue-500 flex justify-end md:text-xl text-sm font-bold hover:underline">Lihat
                         Selengkapnya
                         &#8250;</a>
                 </div>
 
                 <div id="kunjungan-images" class="flex justify-center md:py-6 py-2">
-                    <div class="md:w-4/5 w-[90%] md:h-80 h-52 relative">
+                    <div class="md:w-4/5 w-[90%] md:h-80 h-40 relative">
                         <img src="img/headerimg5.png" alt=""
-                            class="w-full h-full object-cover absolute transition-opacity duration-1000 opacity-100"
+                            class="w-full h-full rounded-md object-cover absolute transition-opacity duration-1000 opacity-100"
                             id="image1">
                         <img src="img/headerimg3.jpeg" alt=""
-                            class="w-full h-full object-cover absolute transition-opacity duration-1000 opacity-0"
+                            class="w-full h-full rounded-md object-cover absolute transition-opacity duration-1000 opacity-0"
                             id="image2">
                         <img src="img/headerimg6.jpg" alt=""
-                            class="w-full h-full object-cover absolute transition-opacity duration-1000 opacity-0"
+                            class="w-full h-full rounded-md object-cover absolute transition-opacity duration-1000 opacity-0"
                             id="image3">
                         <img src="img/headerimg4.png" alt=""
-                            class="w-full h-full object-cover absolute transition-opacity duration-1000 opacity-0"
+                            class="w-full h-full rounded-md object-cover absolute transition-opacity duration-1000 opacity-0"
                             id="image3">
                         <img src="img/headerimg2.jpg" alt=""
-                            class="w-full h-full object-cover absolute transition-opacity duration-1000 opacity-0"
+                            class="w-full h-full rounded-md object-cover absolute transition-opacity duration-1000 opacity-0"
                             id="image3">
                     </div>
                 </div>
@@ -171,18 +171,25 @@
                 <div class="mx-auto max-w-7xl px-4 py-6 flex justify-center sm:px-6 lg:px-8">
                     <div class="flex md:flex-row flex-col justify-center md:gap-5 gap-3">
                         <div
-                            class="bg-white md:w-96 w-[300px] md:h-48 h-auto px-5 pb-3 rounded-md border-2 border-blue-500 hover:shadow-xl ">
+                            class="bg-white md:w-96 w-[300px] h-auto px-5 pb-3 rounded-md border-2 border-blue-500 hover:shadow-xl ">
                             <div class="flex items-center md:h-20 h-16 gap-3">
                                 <img class="h-8 w-8" src="img/logo-bmti.png" alt="">
                                 <div class="">
                                     <h1 class="md:text-xl text-sm font-bold">Layanan Penggunaan Fasilitas Lembaga</h1>
                                 </div>
                             </div>
-                            <div class="md:text-base text-xs md:h-[70px] h-[50px]">
-                                <p>informasi</p>
+                            <div class="md:h-[70px] h-[50px]">
+                                <p class="md:text-base text-justify text-xs">
+                                    @php
+                                        $text1 = 'Layanan Penggunaan Fasilitas Lembaga kami memberikan kesempatan kepada pihak
+                                eksternal maupun internal untuk memanfaatkan berbagai fasilitas gedung, seperti
+                                gedung serba guna, ruang seminar, dan ruang rapat kerja.';
+                                    @endphp
+                                    {{ Str::limit($text1, 150) }}</p>
                             </div>
-                            <div class="md:text-base text-sm">
-                                <a href="#" data-modal-target="select-modal" data-modal-toggle="select-modal"
+                            <div class="md:text-base text-sm py-2">
+                                <a href="/fasilitas" data-modal-target="select-modal"
+                                    data-modal-toggle="select-modal"
                                     class="inline-flex font-medium items-center text-blue-600 hover:underline">
                                     Open
                                     <svg class="w-3 h-3 ms-2.5 rtl:rotate-[270deg]" aria-hidden="true"
@@ -197,18 +204,24 @@
                         </div>
 
                         <div
-                            class="bg-white md:w-96 w-[300px] md:h-48 h-auto px-5 pb-3 rounded-md border-2 border-blue-500 hover:shadow-xl ">
+                            class="bg-white md:w-96 w-[300px] h-auto px-5 pb-3 rounded-md border-2 border-blue-500 hover:shadow-xl ">
                             <div class="flex items-center md:h-20 h-16 gap-3">
                                 <img class="h-8 w-8" src="img/logo-bmti.png" alt="">
                                 <div class="">
                                     <h1 class="md:text-xl text-sm font-bold">Layanan Magang (PKL)</h1>
                                 </div>
                             </div>
-                            <div class="md:text-base text-xs md:h-[70px] h-[50px]">
-                                <p>informasi</p>
+                            <div class="md:h-[70px] h-[50px]">
+                                <p class="md:text-base text-xs text-justify">
+                                    @php
+                                        $text2 =
+                                            'kami menawarkan kesempatan bagi siswa maupun mahasiswa untuk mendapatkan pengalaman langsung di dunia industri. Kami menyediakan fasilitas dan bimbingan yang diperlukan untuk mendukung perkembangan keterampilan dan pengetahuan peserta PKL. Program ini bertujuan untuk mempersiapkan mahasiswa dalam menghadapi tantangan dunia kerja dan meningkatkan kualitas pendidikan melalui pengalaman praktis.';
+                                    @endphp
+                                    {{ Str::limit($text2, 110) }}
+                                </p>
                             </div>
-                            <div class="md:text-base text-sm">
-                                <a href="#" data-modal-target="select-modal" data-modal-toggle="select-modal"
+                            <div class="md:text-base text-sm py-2">
+                                <a href="/register" data-modal-target="select-modal" data-modal-toggle="select-modal"
                                     class="inline-flex font-medium items-center text-blue-600 hover:underline">
                                     Open
                                     <svg class="w-3 h-3 ms-2.5 rtl:rotate-[270deg]" aria-hidden="true"
@@ -223,7 +236,7 @@
                         </div>
 
                         <div
-                            class="bg-white md:w-96 w-[300px] md:h-48 h-auto px-5 pb-3 rounded-md border-2 border-blue-500 hover:shadow-xl ">
+                            class="bg-white md:w-96 w-[300px] h-auto px-5 pb-3 rounded-md border-2 border-blue-500 hover:shadow-xl ">
                             <div class="flex items-center md:h-20 h-16 gap-3">
                                 <img class="h-8 w-8" src="img/logo-bmti.png" alt="">
                                 <div class="">
@@ -231,10 +244,16 @@
                                 </div>
                             </div>
                             <div class="md:text-base text-xs md:h-[70px] h-[50px]">
-                                <p>informasi</p>
+                                <p class="md:text-base text-xs text-justify">
+                                    @php
+                                        $text3 =
+                                            'kami memberikan kesempatan bagi siswa maupun mahasiswa untuk belajar langsung dari lembaga BBPPMPV BMTI. Kunjungan ini dirancang untuk memperluas wawasan peserta tentang praktik industri dan teknologi terbaru. Melalui pengalaman ini,siswa dan mahasiswa dapat menghubungkan teori yang dipelajari di sekolah atau kampus dengan dunia kerja yang sesungguhnya, serta memperluas jaringan profesional mereka.';
+                                    @endphp
+                                    {{ Str::limit($text3, 120) }}
+                                </p>
                             </div>
-                            <div class="md:text-base text-sm">
-                                <a href="#" data-modal-target="select-modal" data-modal-toggle="select-modal"
+                            <div class="md:text-base text-sm py-2">
+                                <a href="/kunjin" data-modal-target="select-modal" data-modal-toggle="select-modal"
                                     class="inline-flex font-medium items-center text-blue-600 hover:underline">
                                     Open
                                     <svg class="w-3 h-3 ms-2.5 rtl:rotate-[270deg]" aria-hidden="true"
@@ -246,20 +265,6 @@
                                     </svg>
                                 </a>
                             </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="md:block hidden">
-                    <div class="px-10 py-10 flex justify-center">
-                        <div class="flex justify-center">
-                            <p class="text-center text-2xl md:w-[1000px] w-[300px]">Melalui platform ini, Anda
-                                dapat dengan mudah mengakses berbagai layanan unggulan yang kami tawarkan, yang
-                                dirancang
-                                untuk
-                                memenuhi kebutuhan Anda secara efisien dan profesional. Lembaga kami berkomitmen untuk
-                                memberikan solusi terbaik, menyediakan informasi yang lengkap, serta menawarkan berbagai
-                                fasilitas yang akan membantu Anda mencapai tujuan dengan lebih cepat dan mudah.</p>
                         </div>
                     </div>
                 </div>

@@ -27,17 +27,20 @@ class BuildingAdminController extends Controller
         $request->validate([
             'name' => 'required|string|max:255',
             'price' => 'required|numeric',
-            'description' => 'required|string', // Validasi untuk description
-            'images.*' => 'required|image|max:2048', // Validasi untuk setiap gambar
+            'description' => 'required|string',
+            'images.*' => 'nullable|image|mimes:jpeg,png,jpg,gif', // Validasi untuk semua gambar
+            'kapasitas' => 'required|integer',
+            'ruang' => 'required|string',
+            'AC' => 'required|boolean',
+            'wifi' => 'required|boolean',
+            'parkir' => 'required|boolean',
+            'toilet' => 'required|integer',
+            'viproom' => 'required|integer',
         ]);
 
-        // Membuat entri baru di tabel buildings
         $building = new Building();
-        $building->name = $request->name;
-        $building->price = $request->price;
-        $building->description = $request->description; // Simpan deskripsi gedung
+        $building->fill($request->all()); // Mass-assignment
 
-        // Simpan gambar pertama sebagai gambar utama untuk card
         if ($request->hasFile('images')) {
             $imageNames = [];
             foreach ($request->file('images') as $image) {
@@ -45,17 +48,14 @@ class BuildingAdminController extends Controller
                 $image->move(public_path('uploads/buildings'), $imageName);
                 $imageNames[] = 'uploads/buildings/' . $imageName;
             }
-            // Simpan gambar utama di database
-            $building->image = $imageNames[0]; // Ambil gambar pertama untuk ditampilkan di card
-            // Simpan semua gambar di kolom lain
-            $building->images = json_encode($imageNames); // Simpan sebagai JSON atau serialized
+            $building->images = json_encode($imageNames);
+            $building->image = $imageNames[1] ?? null; // Mengambil gambar pertama jika ada
         }
 
         $building->save();
 
         return redirect()->route('buildings.index')->with('success', 'Gedung berhasil ditambahkan.');
     }
-
 
     /**
      * Display the specified resource.
@@ -74,43 +74,61 @@ class BuildingAdminController extends Controller
     }
 
     // Memperbarui data gedung (UPDATE)
-    public function update(Request $request, $id)
+    public function update(Request $request, Building $building)
     {
-        $building = Building::findOrFail($id);
-
         $request->validate([
             'name' => 'required|string|max:255',
             'price' => 'required|numeric',
-            'description' => 'required|string', // Validasi untuk description
-            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048', // Validasi gambar
+            'description' => 'required|string',
+            'images.*' => 'nullable|image|mimes:jpeg,png,jpg,gif', // Validasi untuk semua gambar
+            'kapasitas' => 'required|integer',
+            'ruang' => 'required|string',
+            'AC' => 'required|boolean',
+            'wifi' => 'required|boolean',
+            'parkir' => 'required|boolean',
+            'toilet' => 'required|integer',
+            'viproom' => 'required|integer',
         ]);
 
-        // Menangani upload gambar (jika ada gambar baru)
         if ($request->hasFile('image')) {
             $image = $request->file('image');
             $imageName = time() . '.' . $image->getClientOriginalExtension();
             $image->move(public_path('uploads/buildings'), $imageName);
 
+            // Urutkan file berdasarkan nama
+            usort($files, function ($a, $b) {
+                return strcmp($a->getClientOriginalName(), $b->getClientOriginalName());
+            });
+
+            // Simpan file ke storage
+            foreach ($files as $file) {
+                $filename = time() . '_' . $file->getClientOriginalName();
+                $file->storeAs('public/buildings', $filename);
+
+                // Simpan nama file ke database jika perlu
+                $building->images()->create(['path' => $filename]);
+            };
+            
             // Menghapus gambar lama jika ada
-            if (file_exists(public_path($building->image))) {
+            if ($building->image && file_exists(public_path($building->image))) {
                 unlink(public_path($building->image));
             }
 
             $building->image = 'uploads/buildings/' . $imageName;
-        }
+            }
 
-        $building->name = $request->name;
-        $building->description = $request->description; // Update deskripsi gedung
-        $building->price = $request->price;
-        $building->save();
+        $building->update($request->all()); // Update entri
 
         return redirect()->route('buildings.index')->with('success', 'Gedung berhasil diupdate');
     }
 
-
     // Menghapus gedung (DELETE)
     public function destroy(Building $building)
     {
+        if ($building->image && file_exists(public_path($building->image))) {
+            unlink(public_path($building->image));
+        }
+
         $building->delete();
 
         return redirect()->route('buildings.index')->with('success', 'Gedung berhasil dihapus.');

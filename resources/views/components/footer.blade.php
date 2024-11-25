@@ -1,5 +1,5 @@
-<footer class=" md:mt-10 h-[250px] md:h-[180px] ">
-    <div class="flex flex-col md:flex-row text-center justify-center md:gap-12 gap-1 w-300px">
+<footer class=" md:mt-10 md:h-[180px] h-[250px] md:border-none border-t-2">
+    <div class="flex flex-col md:flex-row text-center justify-center md:gap-12 gap-1 w-300px pt-5 md:pt-0">
         <a href="" class="hover:text-blue-700 md:text-sm text-xs font-semibold leading-6 text-gray-700">Privacy</a>
         <a href="" class="hover:text-blue-700 md:text-sm text-xs font-semibold leading-6 text-gray-700">Blog</a>
         <a href="" class="hover:text-blue-700 md:text-sm text-xs font-semibold leading-6 text-gray-700">Tentang

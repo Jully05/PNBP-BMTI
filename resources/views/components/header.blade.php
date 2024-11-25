@@ -1,5 +1,5 @@
 <header class="relative shadow md:h-5/6 h-3/6 flex justify-center items-center">
-    <img src="img/headerimg.png" alt="" class="absolute inset-0 w-full h-full object-cover opacity-90 z-0">
+    <img src="img/BMTI.JPG" alt="" class="absolute inset-0 w-full h-full md:object-cover  opacity-90 z-0">
     <div class="absolute inset-0 bg-black opacity-40"></div>
     <div
         class="relative flex flex-col justify-center items-center mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8 min-h-[200px] z-10">
