@@ -34,7 +34,7 @@
                     </div>
                     <div class=" md:h-[400px] flex justify-center items-center">
                         <div class="w-[90%] h-[90%] shadow-2xl rounded-lg">
-                            <img src="img/background.jpg" class="w-full h-full rounded-lg" alt="">
+                            <img src="img/BMTI.JPG" class="w-full h-full rounded-lg" alt="">
                         </div>
                     </div>
                 </div>
@@ -49,14 +49,13 @@
             <div class="flex flex-col md:flex-row justify-center mt-10 gap-5 md:gap-0">
                 <div
                     class="md:w-[50%] md:h-[360px] flex justify-center items-center hover:scale-110 focus:outline-none focus:ring-2">
-                    <div
-                        class="bg-gradient-to-r from-violet-500 to-fuchsia-500 w-[90%] h-full px-4 py-2 shadow-2xl rounded-lg">
+                    <div class="w-[90%] h-full px-4 py-2 shadow-2xl rounded-lg">
                         <div class="flex flex-col item-center justify-center text-justify gap-3">
                             <h1
                                 class="text-blue-900 bg-yellow-500 text-center py-2 md:text-3xl rounded-lg shadow-xl font-bold tracking-wide">
                                 Persyaratan Administrasi</h1>
                             <ul
-                                class="list-decimal md:mx-5 flex flex-col gap-4 mt-5 md:text-xl text-sm px-5 pb-5 text-white">
+                                class="list-decimal md:mx-5 flex flex-col gap-4 mt-5 md:text-xl text-sm px-5 pb-5 text-blue-900">
                                 <li>
                                     Terdaftar dalam surat pemanggilan
                                 </li>
@@ -75,14 +74,13 @@
                 </div>
                 <div
                     class="md:w-[50%] md:h-[360px] flex justify-center items-center hover:scale-110 focus:outline-none focus:ring-2">
-                    <div
-                        class="bg-gradient-to-r from-violet-500 to-fuchsia-500 w-[90%] h-full px-4 py-2 shadow-2xl rounded-lg">
+                    <div class="w-[90%] h-full px-4 py-2 shadow-2xl rounded-lg">
                         <div class="flex flex-col item-center justify-center text-justify gap-3">
                             <h1
                                 class="text-blue-900 bg-yellow-500 text-center py-2 md:text-2xl rounded-lg shadow-xl font-bold tracking-wide">
                                 Sistem, Mekanisme dan Prosedur Pekayaan</h1>
                             <ul
-                                class="list-decimal md:mx-5 flex flex-col gap-4 mt-5 text-sm md:text-xl px-5 pb-5 text-white">
+                                class="list-decimal md:mx-5 flex flex-col gap-4 mt-5 text-sm md:text-xl px-5 pb-5 text-blue-900">
                                 <li>
                                     Sekolah/Universitas/ Perguruan tinggi mengajukan surat permohonan dan melampirkan
                                     proposal.
@@ -105,14 +103,13 @@
             <div class="flex flex-col md:flex-row justify-center md:mt-0 mt-5 md:gap-0 gap-5">
                 <div
                     class="md:w-[50%] md:h-[400px] flex justify-center items-center hover:scale-110 focus:outline-none focus:ring-2">
-                    <div
-                        class="bg-gradient-to-b from-purple-500 to-pink-500 w-[90%] h-[80%] px-4 py-2 shadow-2xl rounded-lg">
+                    <div class="w-[90%] h-[80%] px-4 py-2 shadow-2xl rounded-lg">
                         <div class="flex flex-col item-center justify-center text-justify gap-3">
                             <h1
                                 class="text-blue-900 bg-yellow-500 text-center py-2 md:text-2xl rounded-lg shadow-xl font-bold tracking-wide">
                                 Jangka Waktu Penyelesaian</h1>
                             <ul
-                                class="list-disc md:mx-5 flex flex-col gap-4 mt-5 text-sm md:text-xl px-5 pb-5 text-white">
+                                class="list-disc md:mx-5 flex flex-col gap-4 mt-5 text-sm md:text-xl px-5 pb-5 text-blue-900">
                                 <li>
                                     5 hari kerja untuk surat jawaban permohonan PKL
                                 </li>
@@ -129,20 +126,19 @@
                 </div>
                 <div
                     class="md:w-[50%] md:h-[400px] flex justify-center items-center hover:scale-110 focus:outline-none focus:ring-2">
-                    <div
-                        class="bg-gradient-to-b from-purple-500 to-pink-500 w-[90%] h-[80%] px-4 py-2 shadow-2xl rounded-lg">
+                    <div class="w-[90%] h-[80%] px-4 py-2 shadow-2xl rounded-lg">
                         <div class="flex flex-col item-center justify-center text-justify md:gap-3">
                             <h1
                                 class="text-blue-900 bg-yellow-500 text-center py-2 md:text-2xl rounded-lg shadow-xl font-bold tracking-wide">
                                 Produk Layanan</h1>
-                            <div class="text-sm md:text-xl mt-5 flex flex-col gap-2 pb-5 text-white">
+                            <div class="text-sm md:text-xl mt-5 flex flex-col gap-2 pb-5 text-blue-900">
                                 <h1>Pelaksanaan PKL/Prakerin</h1>
                                 <h1>Penelitian/Magang</h1>
                             </div>
                             <h1
                                 class="text-blue-900 bg-yellow-500 text-center py-2 md:text-2xl rounded-lg shadow-xl font-bold tracking-wide">
                                 Biaya</h1>
-                            <h1 class="text-sm md:text-xl pb-5 pt-3 text-white">Tidak Berbayar ( GRATIS! )</h1>
+                            <h1 class="text-sm md:text-xl pb-5 pt-3 text-blue-900">Tidak Berbayar ( GRATIS! )</h1>
                         </div>
                     </div>
                 </div>

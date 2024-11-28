@@ -2,32 +2,14 @@
 <html lang="id">
 
 <head>
-    {{-- <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Layanan Kunjungan Industri</title>
     @vite('resources/css/app.css')
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> --}}
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-    @vite('resources/css/app.css')
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-        integrity="sha512-Fo3rlrQdP9kPzQ9GMRRO9boM4rK7Huvm+NTIOVZ76v6IX7DQDmw/nzKfT7u15yB+W6AGZ/xxbkZoT7x1g3YFsg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- Tambahan FullCalendar CSS dan JS -->
-    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.css" rel="stylesheet" />
-    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.js"></script>
-    <link rel="stylesheet" href="{{ mix('css/app.css') }}">
-    <script defer src="{{ asset('js/scripts.js') }}"></script>
     <script>
         window.addEventListener('scroll', function() {
             const navbar = document.getElementById('navbar');
@@ -55,34 +37,22 @@
 
 <body class="bg-gradient-to-br from-blue-900 to-blue-500 text-gray-100">
 
-    <main class="pt-24 mx-auto" x-data="{ isOpen: false }">
+    <main class="pt-24 container mx-auto" x-data="{ isOpen: false }">
         <!-- Hero Section -->
-        <section>
-            <div
-                class="relative flex flex-col justify-center text-center py-20 bg-gradient-to-b from-blue-900 to-transparent rounded-lg shadow-2xl">
-                <div class="absolute inset-0">
-                    <img src="/img/background.jpg" alt="" class="w-full h-full object-cover opacity-30">
-                </div>
-                <div class="px-40">
-                    <h2 class="text-5xl font-extrabold mb-6 relative z-10 animate-fade-in text-white">Kunjungan Study
-                        Tour
-                        di
-                        BBPPMV BMTI</h2>
-                    <p class="text-xl mb-8 relative z-10 opacity-90 text-white">BBPPMB BMTI menerima kunjungan studi
-                        dari
-                        sekolah dan kampus untuk memberikan edukasi tentang tugas BBPPMB BMTI, termasuk pengelolaan
-                        pendidikan
-                        vokasi dan pengembangan kompetensi. Kunjungan ini gratis dan bertujuan meningkatkan wawasan
-                        tentang
-                        peran BBPPMB BMTI dalam peningkatan kualitas pendidikan di Indonesia.</p>
-                </div>
-                <div>
-                    <button type="button"
-                        @click="isOpen = !isOpen; $nextTick(() => { if(isOpen) document.getElementById('form-pendaftaran').scrollIntoView({ behavior: 'smooth' }); })"
-                        class="inline-block px-8 py-3 bg-white text-blue-900 font-bold rounded-full shadow-md hover:bg-gray-200 transition-transform transform hover:scale-105 relative z-10">Daftar
-                        Sekarang</button>
-                </div>
+        <section class="relative text-center py-20 bg-gradient-to-b from-blue-900 to-transparent rounded-lg shadow-2xl">
+            <div class="absolute inset-0">
+                <img src="/img/background.jpg" alt="" class="w-full h-full object-cover opacity-30">
             </div>
+            <h2 class="text-5xl font-extrabold mb-6 relative z-10 animate-fade-in text-white">Kunjungan Study Tour di
+                BBPPMV BMTI</h2>
+            <p class="text-xl mb-8 relative z-10 opacity-90 text-white">BBPPMB BMTI menerima kunjungan studi dari
+                sekolah dan kampus untuk memberikan edukasi tentang tugas BBPPMB BMTI, termasuk pengelolaan pendidikan
+                vokasi dan pengembangan kompetensi. Kunjungan ini gratis dan bertujuan meningkatkan wawasan tentang
+                peran BBPPMB BMTI dalam peningkatan kualitas pendidikan di Indonesia.</p>
+            <button type="button"
+                @click="isOpen = !isOpen; $nextTick(() => { if(isOpen) document.getElementById('form-pendaftaran').scrollIntoView({ behavior: 'smooth' }); })"
+                class="inline-block px-8 py-3 bg-white text-blue-900 font-bold rounded-full shadow-md hover:bg-gray-200 transition-transform transform hover:scale-105 relative z-10">Daftar
+                Sekarang</button>
         </section>
 
         <!-- Form Pendaftaran -->
@@ -141,7 +111,7 @@
 
 
         <!-- Layanan Section -->
-        <section id="layanan" class="p-8 my-12 px-40">
+        <section id="layanan" class="p-8 my-12">
             <h3 class="text-3xl font-extrabold text-center mb-6 ">Layanan Kami</h3>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <!-- Kolom Kiri -->
@@ -219,31 +189,18 @@
         </section>
 
         <!-- Galeri Section -->
-        <section class="p-8 mx-4 rounded-lg shadow-lg my-12 bg-white text-blue-900 animate-slide-up">
+        <section class="p-8 mx-4 rounded-lg shadow-lg my-12 bg-white bg-sky-500 text-blue-900 animate-slide-up">
             <h3 class="text-3xl font-extrabold text-center mb-6">Galeri Kegiatan</h3>
-            <div class="flex justify-center gap-5">
-                <table>
-                    <tr>
-                        <td><img src="https://via.placeholder.com/300"
-                                class="rounded-lg shadow-md transform hover:scale-105 transition duration-300"
-                                alt="Foto Kegiatan 1"></td>
-                        <td><img src="https://via.placeholder.com/300"
-                                class="rounded-lg shadow-md transform hover:scale-105 transition duration-300"
-                                alt="Foto Kegiatan 1"></td>
-                        <td><img src="https://via.placeholder.com/300"
-                                class="rounded-lg shadow-md transform hover:scale-105 transition duration-300"
-                                alt="Foto Kegiatan 1"></td>
-                        <td><img src="https://via.placeholder.com/300"
-                                class="rounded-lg shadow-md transform hover:scale-105 transition duration-300"
-                                alt="Foto Kegiatan 1"></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                </table>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <img src="https://via.placeholder.com/300"
+                    class="rounded-lg shadow-md transform hover:scale-105 transition duration-300"
+                    alt="Foto Kegiatan 1">
+                <img src="https://via.placeholder.com/300"
+                    class="rounded-lg shadow-md transform hover:scale-105 transition duration-300"
+                    alt="Foto Kegiatan 2">
+                <img src="https://via.placeholder.com/300"
+                    class="rounded-lg shadow-md transform hover:scale-105 transition duration-300"
+                    alt="Foto Kegiatan 3">
             </div>
         </section>
     </main>
