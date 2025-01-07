@@ -8,6 +8,14 @@ use Illuminate\Http\Request;
 
 class BuildingAdminController extends Controller
 {
+    
+    public function dashboard()
+    {
+        $buildings = Building::all(); 
+    
+        return view('dashboardadmin', compact('buildings'));
+    }
+
     // Menampilkan daftar gedung (READ)
     public function index()
     {

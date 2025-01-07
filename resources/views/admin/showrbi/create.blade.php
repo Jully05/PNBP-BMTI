@@ -4,7 +4,7 @@
 @section('content')
 
     <div class="bg-primary py-3">
-        <h3 class="text-white text-center">BOOKING show RBI</h3>
+        <h3 class="text-white text-center">BOOKING GEDUNG RBI</h3>
     </div>
 
     <div class="container">

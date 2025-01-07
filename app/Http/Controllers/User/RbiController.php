@@ -7,7 +7,6 @@ use Illuminate\Http\Request;
 use App\Models\ShowRbi;
 use App\Models\Building;
 
-
 class RbiController extends Controller
 {
     public function index() {

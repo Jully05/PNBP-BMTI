@@ -1,10 +1,11 @@
 @extends('layouts.adminbook')
+
 @section('title', 'Admin | Tambah Booking pancaniti')
 
 @section('content')
 
     <div class="bg-primary py-3">
-        <h3 class="text-white text-center">BOOKING show pancaniti</h3>
+        <h3 class="text-white text-center">BOOKING GEDUNG PANCANITI</h3>
     </div>
 
     <div class="bg-blue-200">
