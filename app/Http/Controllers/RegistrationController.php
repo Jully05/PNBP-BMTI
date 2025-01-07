@@ -20,7 +20,7 @@ class RegistrationController extends Controller
         'education_level' => 'required|string|max:100',
         'institution' => 'required|string|max:255',
         'major' => 'required|string|max:255',
-        'upload_letter' => 'required|file|mimes:pdf,doc,docx,jpg,jpeg,png|max:2048',
+        'upload_letter' => 'required|file|mimes:pdf,doc,docx,jpg,jpeg,png|max:1024',
     ]);
 
     // Proses upload file jika ada

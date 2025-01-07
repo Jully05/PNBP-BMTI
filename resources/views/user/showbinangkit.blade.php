@@ -1,10 +1,10 @@
-@extends('layouts.adminbook')
+@extends('layouts.user')
 
-@section('title', 'Admin | List Booking RBI')
+@section('title', 'User | List Booking binangkit')
 
 @section('content')
-    <div class="md:ml-20 items-center mt-20 hidden md:block">
-        <button onclick="window.location.href='/'"
+    <div class="items-center mt-20 hidden md:block">
+        <button onclick="window.location.href='/fasilitas#build'"
             class="flex items-center mx-10 mb-5 bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 ">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-4 mr-2 " fill="none" viewBox="0 0 24 24"
                 stroke="currentColor">
@@ -19,9 +19,10 @@
             <div class="w-full flex flex-col md:flex-row md:px-10 justify-center gap-6 ">
                 <!--Bagian Gambar-->
                 <div class="w-full md:w-3/5 bg-gradient-to-r from-white-500 to-indigo-500 p-6 rounded-lg md:shadow-lg">
-                    <p class="md:text-2xl font-bold pb-5">Galeri Gedung Pancanity</p>
+                    <p class="md:text-2xl font-bold pb-5">Galeri Bale binangkit</p>
                     <div class="w-2xl">
-                        <img id="mainImage" src="/img/rbi/2.JPG" alt="Foto Gedung" class="w-full h-[170px] md:h-[450px]  ">
+                        <img id="mainImage" src="/img/binangkit/b (9).jpg" alt="Foto Gedung"
+                            class="w-full h-[170px] md:h-[450px]  ">
                     </div>
                     <div class="relative w-full mt-6 overflow-hidden">
                         <!-- Tombol Scroll Kiri -->
@@ -32,16 +33,45 @@
                         <!-- Galeri gambar kecil -->
                         <div id="smallImages"
                             class="flex space-x-1 transition-transform duration-300 overflow-x-auto hide-scrollbar">
-                            <img src="/img/binangkit/b (1).jpg" alt="Foto 1" class="w-24 h-24 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300" data-src="/img/binangkit/b (1).jpg">
-                            <img src="/img/binangkit/b (2).jpg" alt="Foto 1" class="w-24 h-24 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300" data-src="/img/binangkit/b (2).jpg">
-                            <img src="/img/binangkit/b (3).jpg" alt="Foto 1" class="w-24 h-24 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300" data-src="/img/binangkit/b (3).jpg">
-                            <img src="/img/binangkit/b (4).jpg" alt="Foto 1" class="w-24 h-24 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300" data-src="/img/binangkit/b (4).jpg">
-                            <img src="/img/binangkit/b (5).jpg" alt="Foto 1" class="w-24 h-24 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300" data-src="/img/binangkit/b (5).jpg">
-                            <img src="/img/binangkit/b (6).jpg" alt="Foto 1" class="w-24 h-24 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300" data-src="/img/binangkit/b (6).jpg">
-                            <img src="/img/binangkit/b (7).jpg" alt="Foto 1" class="w-24 h-24 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300" data-src="/img/binangkit/b (7).jpg">
-                            <img src="/img/binangkit/b (8).jpg" alt="Foto 1" class="w-24 h-24 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300" data-src="/img/binangkit/b (8).jpg">
-                            <img src="/img/binangkit/b (9).jpg" alt="Foto 1" class="w-24 h-24 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300" data-src="/img/binangkit/b (9).jpg">
-                            <img src="/img/binangkit/b (10).jpg" alt="Foto 1" class="w-24 h-24 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300" data-src="/img/binangkit/b (10).jpg">
+                            <img src="/img/binangkit/b (9).jpg" alt="Foto 1"
+                                class="w-24 h-24 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300"
+                                data-src="/img/binangkit/b (9).jpg">
+                            <img src="/img/binangkit/b (8).jpg" alt="Foto 1"
+                                class="w-24 h-24 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300"
+                                data-src="/img/binangkit/b (8).jpg">
+                            <img src="/img/binangkit/b (17).jpg" alt="Foto 1"
+                                class="w-24 h-24 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300"
+                                data-src="/img/binangkit/b (17).jpg">
+                            <img src="/img/binangkit/b (18).jpg" alt="Foto 1"
+                                class="w-24 h-24 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300"
+                                data-src="/img/binangkit/b (18).jpg">
+                            <img src="/img/binangkit/b (22).jpg" alt="Foto 1"
+                                class="w-24 h-24 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300"
+                                data-src="/img/binangkit/b (22).jpg">
+                            <img src="/img/binangkit/b (25).jpg" alt="Foto 1"
+                                class="w-24 h-24 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300"
+                                data-src="/img/binangkit/b (25).jpg">
+                            <img src="/img/binangkit/b (26).jpg" alt="Foto 1"
+                                class="w-24 h-24 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300"
+                                data-src="/img/binangkit/b (26).jpg">
+                            <img src="/img/binangkit/b (28).jpg" alt="Foto 1"
+                                class="w-24 h-24 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300"
+                                data-src="/img/binangkit/b (28).jpg">
+                            <img src="/img/binangkit/b (29).jpg" alt="Foto 1"
+                                class="w-24 h-24 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300"
+                                data-src="/img/binangkit/b (29).jpg">
+                            <img src="/img/binangkit/b (30).jpg" alt="Foto 1"
+                                class="w-24 h-24 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300"
+                                data-src="/img/binangkit/b (30).jpg">
+                            <img src="/img/binangkit/b (31).jpg" alt="Foto 1"
+                                class="w-24 h-24 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300"
+                                data-src="/img/binangkit/b (31).jpg">
+                            <img src="/img/binangkit/b (37).jpg" alt="Foto 1"
+                                class="w-24 h-24 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300"
+                                data-src="/img/binangkit/b (37).jpg">
+                            <img src="/img/binangkit/b (38).jpg" alt="Foto 1"
+                                class="w-24 h-24 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300"
+                                data-src="/img/binangkit/b (38).jpg">
                         </div>
                         <!-- Tombol Scroll Kanan -->
                         <button onclick="scrollRight()"
@@ -50,19 +80,17 @@
                         </button>
                     </div>
                 </div>
-
                 <!-- Bagian Kalender -->
-                {{-- <div class="w-full md:w-2/5 md:shadow-lg rounded-lg p-6">
-                    <h2 class="md:text-2xl font-bold pb-5">Jadwal Sewa RBI</h2>
-                    <div id='calendar' class="w-full md:h-5/6 h-80 bg-gray-200 p-3 rounded-lg"></div>
+                <div class="w-full md:w-2/5 md:shadow-lg rounded-lg p-6">
+                    <h2 class="md:text-2xl font-bold pb-5">Jadwal Sewa Bale Binangkit</h2>
+                    <div id='calendarbinangkit' class="w-full md:h-5/6 h-80 bg-gray-200 p-3 rounded-lg"></div>
                 </div>
-
 
 
                 <link href='https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.css' rel='stylesheet' />
                 <script src='https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.js'></script>
                 <!-- JavaScript untuk FullCalendar -->
-            </div> --}}
+            </div>
 
             <!-- Bagian Deskripsi dan fasilitas -->
             <div class=" md:px-10 flex flex-col md:flex-row justify-between md:gap-6">
@@ -70,15 +98,27 @@
                 <div
                     class="w-full flex flex-col md:flex-row md:gap-10 gap-5 md:w-full md:shadow-lg rounded-lg md:py-6 px-6 py-3">
                     <div class="md:w-4/5">
-                        <p class="text-xl font-bold ">Deskripsi Pancaniti</p>
+                        <p class="text-xl font-bold ">Deskripsi Bale Binangkit</p>
                         <div class=" rounded-lg text-justify center">
                             <p class="py-3 max-h-[350px] md:text-base text-xs overflow-hidden">
-                                blablabla
+                                Gedung Binangkit adalah salah satu gedung yang berada di lingkungan BBPPMPV BMTI di Cimahi.
+                                Gedung ini dirancang dengan fasilitas yang lengkap dan modern, untuk mendukung berbagai
+                                kegiatan pelatihan dan pengembangan kompetensi di bidang teknologi dan industri. Dengan
+                                kapasitas yang besar, Gedung Binangkit dapat menampung sejumlah peserta yang besar untuk
+                                berbagai acara seperti seminar, workshop, pelatihan, serta pertemuan formal lainnya.
+                                Gedung ini memiliki ruang-ruang serbaguna yang dapat disesuaikan dengan berbagai kebutuhan,
+                                mulai dari ruang untuk kegiatan kecil hingga besar. Fasilitas yang ada mencakup sistem
+                                pendingin ruangan, proyektor, audio system, serta akses internet yang stabil. Selain itu,
+                                gedung ini juga menyediakan area parkir yang luas dan aman bagi pengunjung dan peserta
+                                acara.
+                                Dilengkapi dengan fasilitas pendukung yang nyaman, Gedung Binangkit mendukung berbagai
+                                aktivitas baik untuk keperluan internal maupun eksternal yang diselenggarakan oleh BBPPMPV
+                                BMTI.
                             </p>
                         </div>
                     </div>
                     <div class="md:w-2/5">
-                        <h2 class="text-xl font-bold">Harga Sewa Pancaniti</h2>
+                        <h2 class="text-xl font-bold">Harga Sewa Bale Binangkit</h2>
                         <table class="mt-1">
                             <thead>
                                 <tr class="border-b">
@@ -89,8 +129,7 @@
                             <tbody>
                                 <tr class="border-b">
                                     <td class="px-1 py-2 text-sm">per hari</td>
-                                    <td class="px-1 py-2 text-sm">Rp.
-                                        sekian
+                                    <td class="px-1 py-2 text-sm">Rp.10.000.000
                                     </td>
                                 </tr>
                             </tbody>
@@ -100,48 +139,40 @@
                             class="flex text-justify items-center bg-gradient-to-r from-white-500 to-indigo-500 text-sm md:text-base">
                             <tr>
                                 <td><i class="fas fa-user fa-sm text-blue-500 mr-5 px-3 w-4 h-4"></i></td>
-                                <td>Kapasitas: segitu orang</td>
+                                <td>Kapasitas</td>
+                                <td>: 200 0rang</td>
                             </tr>
                             <tr>
                                 <td><i class="fas fa-couch fa-sm text-blue-500 mr-5 px-3 w-4 h-4"></i></td>
-                                <td>Ruang Acara: 3</td>
+                                <td>Ruang Acara</td>
+                                <td>: 1</td>
                             </tr>
                             <tr>
                                 <td><i class="fas fa-snowflake fa-sm text-blue-500 mr-5 px-3 w-4 h-4"></i></td>
-                                <td>AC:
-                                    ada
-                                </td>
+                                <td>AC</td>
+                                <td>: Ada</td>
                             </tr>
                             <tr>
                                 <td><i class="fas fa-wifi fa-sm text-blue-500 mr-5 px-3 w-4 h-4"></i></td>
-                                <td>Wi-Fi:
-                                    ada
-                                </td>
+                                <td>Wi-Fi</td>
+                                <td>: Ada</td>
                             </tr>
                             <tr>
                                 <td><i class="fas fa-car fa-sm text-blue-500 mr-5 px-3 w-4 h-4"></i></td>
-                                <td>Parkir:
-                                    ada
-                                </td>
+                                <td>Parkir</td>
+                                <td>: Ada</td>
                             </tr>
                             <tr>
                                 <td><i class="fas fa-restroom fa-sm text-blue-500 mr-5 px-3 w-4 h-4"></i></td>
-                                <td>Toilet: 2</td>
+                                <td>Toilet</td>
+                                <td>: 2</td>
                             </tr>
                             <tr>
                                 <td><i class="fas fa-door-closed fa-sm text-blue-500 mr-5 px-3 w-4 h-4"></i></td>
-                                <td>VIP Room: 2</td>
+                                <td>VIP Room</td>
+                                <td>: 1</td>
                             </tr>
                         </table>
-
-                        <ul class="bg-red-300  rounded-lg md:text-base text-xs">
-                            <li class="flex items-center">
-
-                            </li>
-                            <li class="flex items-center">
-
-                            </li>
-                        </ul>
                     </div>
                 </div>
 
@@ -171,20 +202,21 @@
 
         </main>
     </div>
-    {{-- <script>
+    <script>
         document.addEventListener("DOMContentLoaded", function() {
             // Bagian Kalender (FullCalendar )
-            var calendarEl = document.getElementById('calendar');
+            var calendarEl = document.getElementById('calendarbinangkit');
 
             var calendar = new FullCalendar.Calendar(calendarEl, {
                 initialView: 'dayGridMonth',
-                events: @json($calendarBookingsRbi),
+                events: @json($calendarBookingsBinangkit),
                 eventClick: function(info) {
-                    var booking = info.event.extendedProps;
+                    var bookingbinangkit = info.event.extendedProps;
                     document.getElementById('bookingId').value = info.event.id;
-                    document.getElementById('nama_pengguna').value = booking.nama_pengguna;
+                    document.getElementById('nama_pengguna').value = bookingbinangkit.nama_pengguna;
                     document.getElementById('nama_kegiatan').value = info.event.title;
-                    document.getElementById('waktu_penggunaan').value = booking.waktu_penggunaan;
+                    document.getElementById('waktu_penggunaan').value = bookingbinangkit
+                        .waktu_penggunaan;
 
                     $('#bookingModal').modal('show');
                 }
@@ -199,8 +231,8 @@
                 tooltip.innerText = text;
                 document.body.appendChild(tooltip);
 
-                tooltip.style.left = ${x}px;
-                tooltip.style.top = ${y - 30}px;
+                tooltip.style.left = `${x}px`;
+                tooltip.style.top = `${y - 30}px`;
 
                 setTimeout(() => {
                     tooltip.remove();
@@ -225,7 +257,7 @@
                 const maxPosition = totalImages - imagesPerPage;
                 currentPosition = Math.max(0, Math.min(maxPosition, currentPosition + direction));
                 const offset = currentPosition * -imageWidth;
-                photoGallery.style.transform = translateX(${offset}px);
+                photoGallery.style.transform = `translateX(${offset}px)`;
             }
 
             // Tombol scroll kiri
@@ -254,5 +286,5 @@
             });
 
         });
-    </script> --}}
+    </script>
 @endsection

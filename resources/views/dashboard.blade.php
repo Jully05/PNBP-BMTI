@@ -64,24 +64,59 @@
                         <!-- Container yang bisa di-scroll dengan scrollbar tersembunyi -->
                         <div id="building-container" class="md:py-5 py-2 overflow-x-auto min-w-full hide-scrollbar">
                             <div class="flex gap-2">
-                                @foreach ($buildings as $building)
-                                    <a href="{{ route('buildings.show', $building->id) }}">
-                                        <div
-                                            class="max-w-xs md:max-w-xs w-52 md:w-64 rounded-md md:h-auto md:shadow-lg bg-white flex-shrink-0">
-                                            <img class="md:w-full md:h-40 h-36 object-cover md:rounded-none rounded-md"
-                                                src="{{ asset($building->image) }}" alt="Nama Gedung">
-                                            <div class="md:px-2 px-1 py-1">
-                                                <div class="font-bold md:text-lg mb-1">{{ $building->name }}</div>
-                                            </div>
-                                            <div class="flex justify-between items-center pb-5">
-                                                <span class="text-gray-700 px-1 md:px-2 text-sm">Rp
-                                                    {{ number_format($building->price) }}
-                                                    / hari</span>
-                                            </div>
+                                <!-- Card 1 -->
+                                <a href="/user/showpancaniti">
+                                    <div
+                                        class="max-w-xs md:max-w-xs w-52 md:w-64 rounded-md md:h-auto shadow-lg bg-white flex-shrink-0">
+                                        <img class="w-full md:h-40 h-32 object-cover" src="/img/pancaniti/p (1).JPG"
+                                            alt="Nama Gedung">
+                                        <div class="px-4 py-1">
+                                            <div class="font-bold text-lg mb-1">Gedung Pancaniti</div>
                                         </div>
-                                    </a>
-                                @endforeach
+                                    </div>
+                                </a>
+                                {{-- End Card 1 --}}
+
+                                <!-- Card 2 -->
+                                <a href="/user/showbinangkit">
+                                    <div
+                                        class="max-w-xs md:max-w-xs w-52 md:w-64 rounded-md md:h-auto shadow-lg bg-white flex-shrink-0">
+                                        <img class="w-full md:h-40 h-32 object-cover" src="/img/binangkit/b (1).JPG"
+                                            alt="Nama Gedung">
+                                        <div class="px-4 py-1">
+                                            <div class="font-bold text-lg mb-1">Gedung Binangkit</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                {{-- End Card 2 --}}
+
+                                <!-- Card 3 -->
+                                <a href="/user/showk">
+                                    <div
+                                        class="max-w-xs md:max-w-xs w-52 md:w-64 rounded-md md:h-auto shadow-lg bg-white flex-shrink-0">
+                                        <img class="w-full md:h-40 h-32 object-cover" src="/img/kolam renang/k (1).JPG"
+                                            alt="Nama Gedung">
+                                        <div class="px-4 py-1">
+                                            <div class="font-bold text-lg mb-1">Kolam Renang TTUC</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                {{-- End Card 3 --}}
+
+                                <!-- Card 4 -->
+                                <a href="/user/showlapangan">
+                                    <div
+                                        class="max-w-xs md:max-w-xs w-52 md:w-64 rounded-md md:h-auto shadow-lg bg-white flex-shrink-0">
+                                        <img class="w-full md:h-40 h-32 object-cover" src="/img/lapangan bola/l (5).JPG"
+                                            alt="Nama Gedung">
+                                        <div class="px-4 py-1">
+                                            <div class="font-bold text-lg mb-1">Lapangan Bola</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                {{-- End Card 4 --}}
                             </div>
+
                         </div>
 
                         <!-- Tombol untuk menggeser ke kanan -->
@@ -105,18 +140,57 @@
                         <div id="building-container-non-public"
                             class="md:py-5 py-2 overflow-x-auto min-w-full hide-scrollbar">
                             <div class="flex gap-2">
-                                @foreach ($buildings as $building)
-                                    <a href="{{ route('buildings.show', $building->id) }}">
-                                        <div
-                                            class="max-w-xs md:max-w-xs w-52 md:w-64 rounded-md md:h-auto md:shadow-lg bg-white flex-shrink-0">
-                                            <img class="md:w-full md:h-40 h-36 object-cover md:rounded-none rounded-md"
-                                                src="{{ asset($building->image) }}" alt="Nama Gedung">
-                                            <div class="md:px-4 px-1 py-1">
-                                                <div class="font-bold md:text-lg mb-1">{{ $building->name }}</div>
-                                            </div>
+                                <!-- Card 1 -->
+                                <a href="/user/showrbi">
+                                    <div
+                                        class="max-w-xs md:max-w-xs w-52 md:w-64 rounded-md md:h-auto shadow-lg bg-white flex-shrink-0">
+                                        <img class="w-full md:h-40 h-32 object-cover" src="/img/rbi/r (11).jpg"
+                                            alt="Nama Gedung">
+                                        <div class="px-4 py-1">
+                                            <div class="font-bold text-lg mb-1">Gedung RBI</div>
                                         </div>
-                                    </a>
-                                @endforeach
+                                    </div>
+                                </a>
+                                {{-- End Card 1 --}}
+
+                                <!-- Card 2 -->
+                                <a href="/user/showkangguru">
+                                    <div
+                                        class="max-w-xs md:max-w-xs w-52 md:w-64 rounded-md md:h-auto shadow-lg bg-white flex-shrink-0">
+                                        <img class="w-full md:h-40 h-32 object-cover"
+                                            src="/img/wisma Kangguru/wk (1).jpg" alt="Nama Gedung">
+                                        <div class="px-4 py-1">
+                                            <div class="font-bold text-lg mb-1">Wisma Kangguru</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                {{-- End Card 2 --}}
+
+                                <!-- Card 3 -->
+                                <a href="/user/showpanglayungan">
+                                    <div
+                                        class="max-w-xs md:max-w-xs w-52 md:w-64 rounded-md md:h-auto shadow-lg bg-white flex-shrink-0">
+                                        <img class="w-full md:h-40 h-32 object-cover"
+                                            src="/img/wisma panglayungan/wp (1).jpg" alt="Nama Gedung">
+                                        <div class="px-4 py-1">
+                                            <div class="font-bold text-lg mb-1">Wisma Panglayungan</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                {{-- End Card 3 --}}
+
+                                <!-- Card 4 -->
+                                <a href="/user/showwaskita">
+                                    <div
+                                        class="max-w-xs md:max-w-xs w-52 md:w-64 rounded-md md:h-auto shadow-lg bg-white flex-shrink-0">
+                                        <img class="w-full md:h-40 h-32 object-cover"
+                                            src="/img/wisma waskita/ww (107).jpg" alt="Nama Gedung">
+                                        <div class="px-4 py-1">
+                                            <div class="font-bold text-lg mb-1">Wisma Waskita</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                {{-- End Card 4 --}}
                             </div>
                         </div>
 
@@ -143,21 +217,36 @@
 
                 <div id="kunjungan-images" class="flex justify-center md:py-6 py-2">
                     <div class="md:w-4/5 w-[90%] md:h-80 h-40 relative">
-                        <img src="img/headerimg5.png" alt=""
+                        <img src="img/kunjin/kn (1).jpg" alt=""
                             class="w-full h-full rounded-md object-cover absolute transition-opacity duration-1000 opacity-100"
                             id="image1">
-                        <img src="img/headerimg3.jpeg" alt=""
+                        <img src="img/kunjin/kn (2).jpg" alt=""
                             class="w-full h-full rounded-md object-cover absolute transition-opacity duration-1000 opacity-0"
                             id="image2">
-                        <img src="img/headerimg6.jpg" alt=""
+                        <img src="img/kunjin/kn (3).jpg" alt=""
                             class="w-full h-full rounded-md object-cover absolute transition-opacity duration-1000 opacity-0"
                             id="image3">
-                        <img src="img/headerimg4.png" alt=""
+                        <img src="img/kunjin/kn (5).jpg" alt=""
                             class="w-full h-full rounded-md object-cover absolute transition-opacity duration-1000 opacity-0"
-                            id="image3">
-                        <img src="img/headerimg2.jpg" alt=""
+                            id="image4">
+                        <img src="img/kunjin/kn (6).jpg" alt=""
                             class="w-full h-full rounded-md object-cover absolute transition-opacity duration-1000 opacity-0"
-                            id="image3">
+                            id="image5">
+                        <img src="img/kunjin/kn (7).jpg" alt=""
+                            class="w-full h-full rounded-md object-cover absolute transition-opacity duration-1000 opacity-0"
+                            id="image6">
+                        <img src="img/kunjin/kn (8).jpg" alt=""
+                            class="w-full h-full rounded-md object-cover absolute transition-opacity duration-1000 opacity-0"
+                            id="image7">
+                        <img src="img/kunjin/kn (9).jpg" alt=""
+                            class="w-full h-full rounded-md object-cover absolute transition-opacity duration-1000 opacity-0"
+                            id="image8">
+                        <img src="img/kunjin/kn (10).jpg" alt=""
+                            class="w-full h-full rounded-md object-cover absolute transition-opacity duration-1000 opacity-0"
+                            id="image8">
+                        <img src="img/kunjin/kn (11).jpg" alt=""
+                            class="w-full h-full rounded-md object-cover absolute transition-opacity duration-1000 opacity-0"
+                            id="image9">
                     </div>
                 </div>
             </div>

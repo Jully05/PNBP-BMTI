@@ -222,11 +222,8 @@
 
             <div class="px-10">
                 <div class="flex justify-center mt-10">
-                    {{-- <a class="bg-gradient-to-r from-green-900 to-green-400 px-6 py-2 rounded-md hover:scale-110 focus:outline-none focus:ring-2 text-white font-bold tracking-wider"
-                        href="https://wa.me/6282127570507?text=Halo,%20saya%20ingin%20menanyakan%20ketersediaan%20gedung%20{{ $building->name }}">
-                        Pesan Sekarang</a> --}}
                     <a class="bg-gradient-to-r from-green-900 to-green-400 px-6 py-2 rounded-md hover:scale-110 focus:outline-none focus:ring-2 text-white font-bold tracking-wider"
-                        href="https://wa.me/6282127570507?
+                        href="https://wa.me/628112242326?
                         text=Halo, saya ingin menanyakan ketersediaan Gedung RBI%0Apada tanggal (isi tanggal)%0A
                         %0AFORMAT BOOKING GEDUNG
                         %0ANama Lengkap Penyewa: 
@@ -360,24 +357,6 @@
                 });
             });
 
-            // Menampilkan pop-up saat mengarahkan kursor ke gambar
-            smallImages.forEach(function(img) {
-                img.addEventListener('mouseover', function() {
-                    const newSrc = img.getAttribute('data-src');
-                    mainImage.setAttribute('src', newSrc);
-
-                    // Menempatkan tooltip di atas gambar
-                    const rect = image.getBoundingClientRect();
-                    tooltip.style.left = `${rect.left + window.scrollX}px`;
-                    tooltip.style.top = `${rect.top + window.scrollY - 25}px`;
-
-                    // Menghapus tooltip saat kursor keluar
-                    image.addEventListener('mouseleave', function() {
-                        tooltip.remove();
-                    });
-
-                });
-            });
         });
     </script>
 @endsection
