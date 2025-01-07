@@ -83,6 +83,23 @@
                         Sekarang</button>
                 </div>
             </div>
+            <div class="px-6 md:px-20 lg:px-40">
+                <h2
+                    class="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-6 relative z-10 animate-fade-in text-white">
+                    Kunjungan Study Tour di BBPPMV BMTI
+                </h2>
+                <p class="text-sm md:text-lg lg:text-xl mb-8 relative z-10 opacity-90 text-white">
+                    BBPPMB BMTI menerima kunjungan studi dari sekolah dan kampus untuk memberikan edukasi tentang tugas
+                    BBPPMB BMTI, termasuk pengelolaan pendidikan vokasi dan pengembangan kompetensi. Kunjungan ini
+                    gratis dan bertujuan meningkatkan wawasan tentang peran BBPPMB BMTI dalam peningkatan kualitas
+                    pendidikan di Indonesia.
+                </p>
+            </div>
+            <button type="button"
+                @click="isOpen = !isOpen; $nextTick(() => { if(isOpen) document.getElementById('form-pendaftaran').scrollIntoView({ behavior: 'smooth' }); })"
+                class="inline-block px-6 md:px-8 py-3 bg-white text-blue-900 font-bold rounded-full shadow-md hover:bg-gray-200 transition-transform transform hover:scale-105 relative z-10">
+                Daftar Sekarang
+            </button>
         </section>
 
         <!-- Form Pendaftaran -->
@@ -141,9 +158,9 @@
 
 
         <!-- Layanan Section -->
-        <section id="layanan" class="p-8 my-12 px-40">
-            <h3 class="text-3xl font-extrabold text-center mb-6 ">Layanan Kami</h3>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <section id="layanan" class="p-8 my-12 lg:px-40">
+            <h3 class="text-3xl font-extrabold text-center mb-6">Layanan Kami</h3>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 <!-- Kolom Kiri -->
                 <div class="space-y-6">
                     <div
@@ -157,7 +174,6 @@
                             <li>Surat Balasan Permohonan Kunjungan</li>
                         </ol>
                     </div>
-
                     <div
                         class="bg-gradient-to-r from-green-400 to-teal-500 rounded-3xl p-6 shadow-md transition-transform transform hover:scale-105 hover:shadow-lg">
                         <div class="bg-gradient-to-r from-green-600 to-teal-600 rounded-lg p-2 mb-4">
@@ -172,7 +188,6 @@
                             <li>Instansi dapat berkunjung sesuai jadwal yang disepakati.</li>
                         </ol>
                     </div>
-
                     <div
                         class="bg-gradient-to-r from-red-400 to-pink-500 rounded-3xl p-6 shadow-md transition-transform transform hover:scale-105 hover:shadow-lg">
                         <h4 class="bg-gradient-to-r font-bold from-red-600 to-pink-600 rounded-lg p-2 mb-4">Biaya</h4>
@@ -221,29 +236,19 @@
         <!-- Galeri Section -->
         <section class="p-8 mx-4 rounded-lg shadow-lg my-12 bg-white text-blue-900 animate-slide-up">
             <h3 class="text-3xl font-extrabold text-center mb-6">Galeri Kegiatan</h3>
-            <div class="flex justify-center gap-5">
-                <table>
-                    <tr>
-                        <td><img src="https://via.placeholder.com/300"
-                                class="rounded-lg shadow-md transform hover:scale-105 transition duration-300"
-                                alt="Foto Kegiatan 1"></td>
-                        <td><img src="https://via.placeholder.com/300"
-                                class="rounded-lg shadow-md transform hover:scale-105 transition duration-300"
-                                alt="Foto Kegiatan 1"></td>
-                        <td><img src="https://via.placeholder.com/300"
-                                class="rounded-lg shadow-md transform hover:scale-105 transition duration-300"
-                                alt="Foto Kegiatan 1"></td>
-                        <td><img src="https://via.placeholder.com/300"
-                                class="rounded-lg shadow-md transform hover:scale-105 transition duration-300"
-                                alt="Foto Kegiatan 1"></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                </table>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 max-w-full">
+                <img src="https://via.placeholder.com/300"
+                    class="rounded-lg shadow-md transform hover:scale-105 transition duration-300"
+                    alt="Foto Kegiatan 1">
+                <img src="https://via.placeholder.com/300"
+                    class="rounded-lg shadow-md transform hover:scale-105 transition duration-300"
+                    alt="Foto Kegiatan 2">
+                <img src="https://via.placeholder.com/300"
+                    class="rounded-lg shadow-md transform hover:scale-105 transition duration-300"
+                    alt="Foto Kegiatan 3">
+                <img src="https://via.placeholder.com/300"
+                    class="rounded-lg shadow-md transform hover:scale-105 transition duration-300"
+                    alt="Foto Kegiatan 3">
             </div>
         </section>
     </main>

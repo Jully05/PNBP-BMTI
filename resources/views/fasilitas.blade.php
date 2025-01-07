@@ -40,7 +40,7 @@
                 Alur
                 Sewa
             </h1>
-            <div class="md:pt-[70px] pt-5 flex flex-col md:flex-row justify-center gap-5">
+            <div class="md:pt-[70px] pt-5 flex flex-col md:flex-row gap-5">
                 {{-- Alur 1 --}}
                 <div
                     class="bg-white md:h-56 p-[5px] border-2 hover:shadow-xl border-gray rounded-xl w-full max-w-[350px] mx-auto md:mx-0">

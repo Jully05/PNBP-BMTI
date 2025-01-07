@@ -1,10 +1,10 @@
-@extends('layouts.adminbook')
+@extends('layouts.user')
 
-@section('title', 'Admin | List Booking RBI')
+@section('title', 'User | List Booking RBI')
 
 @section('content')
-    <div class="md:ml-20 items-center mt-20 hidden md:block">
-        <button onclick="window.location.href='/'"
+    <div class="items-center mt-20 hidden md:block">
+        <button onclick="window.location.href='/fasilitas#build'"
             class="flex items-center mx-10 mb-5 bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 ">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-4 mr-2 " fill="none" viewBox="0 0 24 24"
                 stroke="currentColor">
@@ -19,9 +19,10 @@
             <div class="w-full flex flex-col md:flex-row md:px-10 justify-center gap-6 ">
                 <!--Bagian Gambar-->
                 <div class="w-full md:w-3/5 bg-gradient-to-r from-white-500 to-indigo-500 p-6 rounded-lg md:shadow-lg">
-                    <p class="md:text-2xl font-bold pb-5">Galeri Gedung Pancanity</p>
+                    <p class="md:text-2xl font-bold pb-5">Galeri Ruangan Reformasi Birokrasi Internal (RBI) </p>
                     <div class="w-2xl">
-                        <img id="mainImage" src="/img/rbi/2.JPG" alt="Foto Gedung" class="w-full h-[170px] md:h-[450px]  ">
+                        <img id="mainImage" src="/img/rbi/r (11).jpg" alt="Foto Gedung"
+                            class="w-full h-[170px] md:h-[450px]  ">
                     </div>
                     <div class="relative w-full mt-6 overflow-hidden">
                         <!-- Tombol Scroll Kiri -->
@@ -32,27 +33,27 @@
                         <!-- Galeri gambar kecil -->
                         <div id="smallImages"
                             class="flex space-x-1 transition-transform duration-300 overflow-x-auto hide-scrollbar">
-                            <img src="/img/rbi/2.JPG" alt="Foto 1"
-                                class="md:w-24 md:h-24 w-20 h-16 rounded-sm cursor-pointer md:hover:scale-105 transition-transform duration-300"
-                                data-src="/img/rbi/2.JPG">
-                            <img src="#" alt="Foto 1"
-                                class="md:w-24 md:h-24 w-20 h-16 rounded-sm cursor-pointer md:hover:scale-105 transition-transform duration-300"
-                                data-src="#">
-                            <img src="#" alt="Foto 1"
-                                class="md:w-24 md:h-24 w-20 h-16 rounded-sm cursor-pointer md:hover:scale-105 transition-transform duration-300"
-                                data-src="#">
-                            <img src="#" alt="Foto 1"
-                                class="md:w-24 md:h-24 w-20 h-16 rounded-sm cursor-pointer md:hover:scale-105 transition-transform duration-300"
-                                data-src="#">
-                            <img src="#" alt="Foto 1"
-                                class="md:w-24 md:h-24 w-20 h-16 rounded-sm cursor-pointer md:hover:scale-105 transition-transform duration-300"
-                                data-src="#">
-                            <img src="#" alt="Foto 1"
-                                class="md:w-24 md:h-24 w-20 h-16 rounded-sm cursor-pointer md:hover:scale-105 transition-transform duration-300"
-                                data-src="#">
-                            <img src="#" alt="Foto 1"
-                                class="md:w-24 md:h-24 w-20 h-16 rounded-sm cursor-pointer md:hover:scale-105 transition-transform duration-300"
-                                data-src="#">
+                            <img src="/img/rbi/r (11).jpg" alt="Foto 1"
+                                class="w-24 h-24 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300"
+                                data-src="/img/rbi/r (11).jpg">
+                            <img src="/img/rbi/r (13).jpg" alt="Foto 1"
+                                class="w-24 h-24 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300"
+                                data-src="/img/rbi/r (13).jpg">
+                            <img src="/img/rbi/r (19).jpg" alt="Foto 1"
+                                class="w-24 h-24 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300"
+                                data-src="/img/rbi/r (19).jpg">
+                            <img src="/img/rbi/r (6).jpg" alt="Foto 1"
+                                class="w-24 h-24 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300"
+                                data-src="/img/rbi/r (6).jpg">
+                            <img src="/img/rbi/r (9).jpg" alt="Foto 1"
+                                class="w-24 h-24 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300"
+                                data-src="/img/rbi/r (9).jpg">
+                            <img src="/img/rbi/r (15).jpg" alt="Foto 1"
+                                class="w-24 h-24 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300"
+                                data-src="/img/rbi/r (15).jpg">
+                            <img src="/img/rbi/r (14).jpg" alt="Foto 1"
+                                class="w-24 h-24 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300"
+                                data-src="/img/rbi/r (14).jpg">
                         </div>
                         <!-- Tombol Scroll Kanan -->
                         <button onclick="scrollRight()"
@@ -81,41 +82,30 @@
                 <div
                     class="w-full flex flex-col md:flex-row md:gap-10 gap-5 md:w-full md:shadow-lg rounded-lg md:py-6 px-6 py-3">
                     <div class="md:w-4/5">
-                        <p class="text-xl font-bold ">Deskripsi Pancaniti</p>
+                        <p class="text-xl font-bold ">Deskripsi Reformasi Birokrasi Internal (RBI)</p>
                         <div class=" rounded-lg text-justify center">
                             <p class="py-3 max-h-[350px] md:text-base text-xs overflow-hidden">
-                                blablabla
+                                Ruangan Reformasi Birokrasi Internal (RBI) di BBPPMPV BMTI dirancang sebagai pusat
+                                koordinasi dan pengelolaan kegiatan yang mendukung pelaksanaan reformasi birokrasi di
+                                lingkungan BBPPMPV BMTI. Ruangan ini mencerminkan suasana profesional dan kolaboratif untuk
+                                meningkatkan efisiensi, transparansi, dan akuntabilitas dalam pelaksanaan tugas-tugas
+                                institusi.
+
+                                Ruangan ini dilengkapi dengan fasilitas modern, termasuk meja kerja ergonomis, area diskusi
+                                yang nyaman, serta media presentasi seperti proyektor dan sistem audio untuk mendukung
+                                kegiatan rapat, pelatihan, atau sosialisasi. Selain itu, ruangan ini juga berfungsi sebagai
+                                ruang meeting yang mampu menampung 10-15 orang, menciptakan suasana yang kondusif untuk
+                                rapat kerja maupun koordinasi antarbidang.
                             </p>
                         </div>
                     </div>
                     <div class="md:w-2/5">
-                        <h2 class="text-xl font-bold">Harga Sewa Pancaniti</h2>
-                        <table class="mt-1">
-                            <thead>
-                                <tr class="border-b">
-                                    <th class="py-2 text-left md:pr-20 pr-10">Status Pemakaian</th>
-                                    <th class="pr-20 py-2 text-left">Biaya Retribusi</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr class="border-b">
-                                    <td class="px-1 py-2 text-sm">per hari</td>
-                                    <td class="px-1 py-2 text-sm">Rp.
-                                        sekian
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
                         <h2 class="text-xl font-bold py-5 ">Fasilitas</h2>
                         <table
                             class="flex text-justify items-center bg-gradient-to-r from-white-500 to-indigo-500 text-sm md:text-base">
                             <tr>
                                 <td><i class="fas fa-user fa-sm text-blue-500 mr-5 px-3 w-4 h-4"></i></td>
-                                <td>Kapasitas: segitu orang</td>
-                            </tr>
-                            <tr>
-                                <td><i class="fas fa-couch fa-sm text-blue-500 mr-5 px-3 w-4 h-4"></i></td>
-                                <td>Ruang Acara: 3</td>
+                                <td>Kapasitas: 20 orang</td>
                             </tr>
                             <tr>
                                 <td><i class="fas fa-snowflake fa-sm text-blue-500 mr-5 px-3 w-4 h-4"></i></td>
@@ -136,15 +126,30 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td><i class="fas fa-restroom fa-sm text-blue-500 mr-5 px-3 w-4 h-4"></i></td>
-                                <td>Toilet: 2</td>
+                                <td><i class="fas fa-plug fa-sm text-blue-500 mr-5 px-3 w-4 h-4"></i></td>
+                                <td>Terminal : ada</td>
                             </tr>
                             <tr>
-                                <td><i class="fas fa-door-closed fa-sm text-blue-500 mr-5 px-3 w-4 h-4"></i></td>
-                                <td>VIP Room: 2</td>
+                                <td><i class="fas fa-tv fa-sm text-blue-500 mr-5 px-3 w-4 h-4"></i></td>
+                                <td>Layar TV: ada</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-video fa-sm text-blue-500 mr-5 px-3 w-4 h-4"></i></td>
+                                <td>Proyektor: ada</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-print fa-sm text-blue-500 mr-5 px-3 w-4 h-4"></i></td>
+                                <td>Printer: ada</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-snowflake fa-sm text-blue-500 mr-5 px-3 w-4 h-4"></i></td>
+                                <td>Kulkas: ada</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-tint fa-sm text-blue-500 mr-5 px-3 w-4 h-4"></i></td>
+                                <td>Dispenser: ada</td>
                             </tr>
                         </table>
-
                         <ul class="bg-red-300  rounded-lg md:text-base text-xs">
                             <li class="flex items-center">
 

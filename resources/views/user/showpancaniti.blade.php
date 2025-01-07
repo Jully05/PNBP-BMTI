@@ -1,6 +1,6 @@
 @extends('layouts.adminbook')
 
-@section('title', 'Admin | List Booking RBI')
+@section('title', 'Admin | List Booking Pancaniti')
 
 @section('content')
     <div class="md:ml-20 items-center mt-20 hidden md:block">
@@ -41,6 +41,90 @@
                                 alt="Foto 1"
                                 class="md:w-24 md:h-24 w-20 h-16 rounded-sm cursor-pointer md:hover:scale-105 transition-transform duration-300"
                                 data-src="https://i2.wp.com/blog.tripcetera.com/id/wp-content/uploads/2020/10/Danau-Toba-edited.jpg">
+                            <img src="/img/pancaniti/p (1).jpg" alt="Foto 1"
+                                class="w-24 h-24 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300"
+                                data-src="/img/pancaniti/p (1).jpg">
+                            <img src="/img/pancaniti/p (2).jpg" alt="Foto 1"
+                                class="w-24 h-24 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300"
+                                data-src="/img/pancaniti/p (2).jpg">
+                            <img src="/img/pancaniti/p (3).jpg" alt="Foto 1"
+                                class="w-24 h-24 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300"
+                                data-src="/img/pancaniti/p (3).jpg">
+                            <img src="/img/pancaniti/p (4).jpg" alt="Foto 1"
+                                class="w-24 h-24 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300"
+                                data-src="/img/pancaniti/p (4).jpg">
+                            <img src="/img/pancaniti/p (5).jpg" alt="Foto 1"
+                                class="w-24 h-24 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300"
+                                data-src="/img/pancaniti/p (5).jpg">
+                            <img src="/img/pancaniti/p (6).jpg" alt="Foto 1"
+                                class="w-24 h-24 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300"
+                                data-src="/img/pancaniti/p (6).jpg">
+                            <img src="/img/pancaniti/p (7).jpg" alt="Foto 1"
+                                class="w-24 h-24 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300"
+                                data-src="/img/pancaniti/p (7).jpg">
+                            <img src="/img/pancaniti/p (8).jpg" alt="Foto 1"
+                                class="w-24 h-24 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300"
+                                data-src="/img/pancaniti/p (8).jpg">
+                            <img src="/img/pancaniti/p (9).jpg" alt="Foto 1"
+                                class="w-24 h-24 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300"
+                                data-src="/img/pancaniti/p (9).jpg">
+                            <img src="/img/pancaniti/p (10).jpg" alt="Foto 1"
+                                class="w-24 h-24 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300"
+                                data-src="/img/pancaniti/p (10).jpg">
+                            <img src="/img/pancaniti/p (11).jpg" alt="Foto 1"
+                                class="w-24 h-24 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300"
+                                data-src="/img/pancaniti/p (11).jpg">
+                            <img src="/img/pancaniti/p (12).jpg" alt="Foto 1"
+                                class="w-24 h-24 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300"
+                                data-src="/img/pancaniti/p (12).jpg">
+                            <img src="/img/pancaniti/p (13).jpg" alt="Foto 1"
+                                class="w-24 h-24 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300"
+                                data-src="/img/pancaniti/p (13).jpg">
+                            <img src="/img/pancaniti/p (14).jpg" alt="Foto 1"
+                                class="w-24 h-24 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300"
+                                data-src="/img/pancaniti/p (14).jpg">
+                            <img src="/img/pancaniti/p (15).jpg" alt="Foto 1"
+                                class="w-24 h-24 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300"
+                                data-src="/img/pancaniti/p (15).jpg">
+                            <img src="/img/pancaniti/p (16).jpg" alt="Foto 1"
+                                class="w-24 h-24 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300"
+                                data-src="/img/pancaniti/p (16).jpg">
+                            <img src="/img/pancaniti/p (17).jpg" alt="Foto 1"
+                                class="w-24 h-24 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300"
+                                data-src="/img/pancaniti/p (17).jpg">
+                            <img src="/img/pancaniti/p (18).jpg" alt="Foto 1"
+                                class="w-24 h-24 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300"
+                                data-src="/img/pancaniti/p (18).jpg">
+                            <img src="/img/pancaniti/p (19).jpg" alt="Foto 1"
+                                class="w-24 h-24 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300"
+                                data-src="/img/pancaniti/p (19).jpg">
+                            <img src="/img/pancaniti/p (20).jpg" alt="Foto 1"
+                                class="w-24 h-24 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300"
+                                data-src="/img/pancaniti/p (20).jpg">
+                            <img src="/img/pancaniti/p (21).jpg" alt="Foto 1"
+                                class="w-24 h-24 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300"
+                                data-src="/img/pancaniti/p (21).jpg">
+                            <img src="/img/pancaniti/p (22).jpg" alt="Foto 1"
+                                class="w-24 h-24 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300"
+                                data-src="/img/pancaniti/p (22).jpg">
+                            <img src="/img/pancaniti/p (23).jpg" alt="Foto 1"
+                                class="w-24 h-24 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300"
+                                data-src="/img/pancaniti/p (23).jpg">
+                            <img src="/img/pancaniti/p (24).jpg" alt="Foto 1"
+                                class="w-24 h-24 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300"
+                                data-src="/img/pancaniti/p (24).jpg">
+                            <img src="/img/pancaniti/p (25).jpg" alt="Foto 1"
+                                class="w-24 h-24 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300"
+                                data-src="/img/pancaniti/p (25).jpg">
+                            <img src="/img/pancaniti/p (26).jpg" alt="Foto 1"
+                                class="w-24 h-24 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300"
+                                data-src="/img/pancaniti/p (26).jpg">
+                            <img src="/img/pancaniti/p (27).jpg" alt="Foto 1"
+                                class="w-24 h-24 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300"
+                                data-src="/img/pancaniti/p (27).jpg">
+                            <img src="/img/pancaniti/p (28).jpg" alt="Foto 1"
+                                class="w-24 h-24 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300"
+                                data-src="/img/pancaniti/p (28).jpg">
                         </div>
                         <!-- Tombol Scroll Kanan -->
                         <button onclick="scrollRight()"
@@ -51,98 +135,95 @@
                 </div>
                 <!-- Bagian Kalender -->
                 <div class="w-full md:w-2/5 md:shadow-lg rounded-lg p-6">
-                    <h2 class="md:text-2xl font-bold pb-5">Jadwal Sewa RBI</h2>
-                    <div id='calendarpancaniti' class="w-full md:h-5/6 h-80 bg-gray-200 p-3 rounded-lg"></div>
+                    <div class="w-full md:w-2/5 md:shadow-lg rounded-lg p-6">
+                        <h2 class="md:text-2xl font-bold pb-5">Jadwal Sewa RBI</h2>
+                        <div id='calendarpancaniti' class="w-full md:h-5/6 h-80 bg-gray-200 p-3 rounded-lg"></div>
+                    </div>
+                    <link href='https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.css' rel='stylesheet' />
+                    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.js'></script>
+                    <!-- JavaScript untuk FullCalendar -->
                 </div>
-
-
-                <link href='https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.css' rel='stylesheet' />
-                <script src='https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.js'></script>
-                <!-- JavaScript untuk FullCalendar -->
-            </div>
-
-            <!-- Bagian Deskripsi dan fasilitas -->
-            <div class=" md:px-10 flex flex-col md:flex-row justify-between md:gap-6">
-                <!-- Deskripsi -->
-                <div
-                    class="w-full flex flex-col md:flex-row md:gap-10 gap-5 md:w-full md:shadow-lg rounded-lg md:py-6 px-6 py-3">
-                    <div class="md:w-4/5">
-                        <p class="text-xl font-bold ">Deskripsi Pancaniti</p>
-                        <div class=" rounded-lg text-justify center">
-                            <p class="py-3 max-h-[350px] md:text-base text-xs overflow-hidden">
-                                blablabla
-                            </p>
+                <!-- Bagian Deskripsi dan fasilitas -->
+                <div class=" md:px-10 flex flex-col md:flex-row justify-between md:gap-6">
+                    <!-- Deskripsi -->
+                    <div
+                        class="w-full flex flex-col md:flex-row md:gap-10 gap-5 md:w-full md:shadow-lg rounded-lg md:py-6 px-6 py-3">
+                        <div class="md:w-4/5">
+                            <p class="text-xl font-bold ">Deskripsi Pancaniti</p>
+                            <div class=" rounded-lg text-justify center">
+                                <p class="py-3 max-h-[350px] md:text-base text-xs overflow-hidden">
+                                    blablabla
+                                </p>
+                            </div>
+                        </div>
+                        <div class="md:w-2/5">
+                            <h2 class="text-xl font-bold">Harga Sewa Pancaniti</h2>
+                            <table class="mt-1">
+                                <thead>
+                                    <tr class="border-b">
+                                        <th class="py-2 text-left md:pr-20 pr-10">Status Pemakaian</th>
+                                        <th class="pr-20 py-2 text-left">Biaya Retribusi</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="border-b">
+                                        <td class="px-1 py-2 text-sm">per hari</td>
+                                        <td class="px-1 py-2 text-sm">Rp. 15.000.000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <h2 class="text-xl font-bold py-5 ">Fasilitas</h2>
+                            <table
+                                class="flex text-justify items-center bg-gradient-to-r from-white-500 to-indigo-500 text-sm md:text-base">
+                                <tr>
+                                    <td><i class="fas fa-user fa-sm text-blue-500 mr-5 px-3 w-4 h-4"></i></td>
+                                    <td>Kapasitas: 1000</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-couch fa-sm text-blue-500 mr-5 px-3 w-4 h-4"></i></td>
+                                    <td>Ruang Acara: 1</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-snowflake fa-sm text-blue-500 mr-5 px-3 w-4 h-4"></i></td>
+                                    <td>AC: Sistem pendingin udara yang efisien untuk menjaga suhu ruangan tetap
+                                        nyaman.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-wifi fa-sm text-blue-500 mr-5 px-3 w-4 h-4"></i></td>
+                                    <td>Wi-Fi: Koneksi internet berkecepatan tinggi untuk mendukung kegiatan online.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-car fa-sm text-blue-500 mr-5 px-3 w-4 h-4"></i></td>
+                                    <td>Parkir:
+                                        ada
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-restroom fa-sm text-blue-500 mr-5 px-3 w-4 h-4"></i></td>
+                                    <td>Toilet: 4</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-door-closed fa-sm text-blue-500 mr-5 px-3 w-4 h-4"></i>
+                                    </td>
+                                    <td>VIP Room: 1</td>
+                                </tr>
+                            </table>
+                            <ul class="bg-red-300  rounded-lg md:text-base text-xs">
+                                <li class="flex items-center">
+                                </li>
+                                <li class="flex items-center">
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="md:w-2/5">
-                        <h2 class="text-xl font-bold">Harga Sewa Pancaniti</h2>
-                        <table class="mt-1">
-                            <thead>
-                                <tr class="border-b">
-                                    <th class="py-2 text-left md:pr-20 pr-10">Status Pemakaian</th>
-                                    <th class="pr-20 py-2 text-left">Biaya Retribusi</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr class="border-b">
-                                    <td class="px-1 py-2 text-sm">per hari</td>
-                                    <td class="px-1 py-2 text-sm">Rp. 15.000.000</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <h2 class="text-xl font-bold py-5 ">Fasilitas</h2>
-                        <table
-                            class="flex text-justify items-center bg-gradient-to-r from-white-500 to-indigo-500 text-sm md:text-base">
-                            <tr>
-                                <td><i class="fas fa-user fa-sm text-blue-500 mr-5 px-3 w-4 h-4"></i></td>
-                                <td>Kapasitas: 1000</td>
-                            </tr>
-                            <tr>
-                                <td><i class="fas fa-couch fa-sm text-blue-500 mr-5 px-3 w-4 h-4"></i></td>
-                                <td>Ruang Acara: 1</td>
-                            </tr>
-                            <tr>
-                                <td><i class="fas fa-snowflake fa-sm text-blue-500 mr-5 px-3 w-4 h-4"></i></td>
-                                <td>AC: Sistem pendingin udara yang efisien untuk menjaga suhu ruangan tetap nyaman.</td>
-                            </tr>
-                            <tr>
-                                <td><i class="fas fa-wifi fa-sm text-blue-500 mr-5 px-3 w-4 h-4"></i></td>
-                                <td>Wi-Fi: Koneksi internet berkecepatan tinggi untuk mendukung kegiatan online.</td>
-                            </tr>
-                            <tr>
-                                <td><i class="fas fa-car fa-sm text-blue-500 mr-5 px-3 w-4 h-4"></i></td>
-                                <td>Parkir:
-                                    ada
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><i class="fas fa-restroom fa-sm text-blue-500 mr-5 px-3 w-4 h-4"></i></td>
-                                <td>Toilet: 4</td>
-                            </tr>
-                            <tr>
-                                <td><i class="fas fa-door-closed fa-sm text-blue-500 mr-5 px-3 w-4 h-4"></i></td>
-                                <td>VIP Room: 1</td>
-                            </tr>
-                        </table>
-
-                        <ul class="bg-red-300  rounded-lg md:text-base text-xs">
-                            <li class="flex items-center">
-
-                            </li>
-                            <li class="flex items-center">
-
-                            </li>
-                        </ul>
-                    </div>
+                    <!-- Fasilitas -->
                 </div>
-
-                <!-- Fasilitas -->
-            </div>
-
-            <div class="px-10">
-                <div class="flex justify-center mt-10">
-                    <a class="bg-gradient-to-r from-green-900 to-green-400 px-6 py-2 rounded-md hover:scale-110 focus:outline-none focus:ring-2 text-white font-bold tracking-wider"
-                        href="https://wa.me/628112242326?
+                <div class="px-10">
+                    <div class="flex justify-center mt-10">
+                        <a class="bg-gradient-to-r from-green-900 to-green-400 px-6 py-2 rounded-md hover:scale-110 focus:outline-none focus:ring-2 text-white font-bold tracking-wider"
+                            href="https://wa.me/628112242326?
                         text=Halo, saya ingin menanyakan ketersediaan Gedung RBI%0Apada tanggal (isi tanggal)%0A
                         %0AFORMAT BOOKING GEDUNG
                         %0ANama Lengkap Penyewa: 
@@ -151,15 +232,15 @@
                         %0AUntuk Kegiatan: 
                         %0AJumlah Orang:
                         ">
-                        Pesan Sekarang</a>
+                            Pesan Sekarang</a>
+                    </div>
+                    <div class="flex flex-col text-center font-light text-xs text-red-600 py-5">
+                        <p>*Pesanan hanya dapat dilakukan melalui Whatsaap resmi BMTI.</p>
+                        <p>*Transaksi hanya melalui rekening resmi BMTI. bukan rekening pribadi Admin atau pekerja
+                            kantor
+                        </p>
+                    </div>
                 </div>
-                <div class="flex flex-col text-center font-light text-xs text-red-600 py-5">
-                    <p>*Pesanan hanya dapat dilakukan melalui Whatsaap resmi BMTI.</p>
-                    <p>*Transaksi hanya melalui rekening resmi BMTI. bukan rekening pribadi Admin atau pekerja kantor
-                    </p>
-                </div>
-            </div>
-
         </main>
     </div>
     <script>
@@ -245,6 +326,8 @@
                 });
             });
 
-        });
+        }); <<
+        <<
+        << < HEAD
     </script>
 @endsection
